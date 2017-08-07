@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+/*********************************************************************定义全局***********************************************/
+body,div,h1,h2,h3,h4,h5,h6,p,img,ul,ol,li{margin:0;padding:0;}
+body{font-family:"宋体",Arial, Helvetica;font-size:12px;}
+ul,ol,li{list-style-type:none;}
+a,a:hover{text-decoration:none;}
+img{border:none;}
+.clear{clear:both;}
+
+.wrap{width:1004px; margin:0 auto;}
+.header{ width:100%; padding:10px 0;}
+
+.content{width:1004px;margin:0 auto;} 
+.list{border:1px solid #dfdfdf;border-top:none;width:1004px;height:700px;}
+.list ul{font-size:15px;}
+.list ul li{width:1004px;float:left;margin-top:10px;}
+.list ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
+.list ul li a{display:block;float:left;margin-left:5px;color:#696969;}
+.list ul li a:hover{color:#de3237;text-decoration:underline;}  
