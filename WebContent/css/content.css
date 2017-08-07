@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/*********************************************************************定义全局***********************************************/
+body,div,h1,h2,h3,h4,h5,h6,p,img,ul,ol,li{margin:0;padding:0;}
+body{font-family:"宋体",Arial, Helvetica;font-size:12px;}
+ul,ol,li{list-style-type:none;}
+a,a:hover{text-decoration:none;}
+img{border:none;}
+.clear{clear:both;}
+
+.content{width:1004px;margin:0 auto;border:1px solid #dfdfdf;
+  border-top:none;width:1004px;height:700px;font-size:15px;
+  line-height:200%;text-indent:2em;} 
+.title{font-size:25px;text-align:center}
