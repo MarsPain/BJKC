@@ -21,13 +21,76 @@ a:hover{ color:#de3237; text-decoration:none}
 .serbtn{width:97px; height:30px; background:none; border:none;cursor:pointer; color:#fff; font-size:14px; font-weight:bold}
 #lain1 ul{display:none;text-align:left;}
 #lain1 ul.block{display: block;}
-.nav{ width:100%; border:1px solid #D32A2F; border-left:0; border-right:0; height:32px; line-height:32px; background:#de3237;}
-.nav_left{ float:left;}
-.nav_left li{ float:left; margin-right:10px;}
-.nav_left li a:link,.nav_left li a:visited{ color:#fff; font-size:14px; font-weight:bold; padding:0 20px; line-height:32px; text-decoration:none; display:block;}
-.nav_left li a:hover{ background:#ba0100}
-.nav_right{ float:right}
-.nav_right li{ float:left; padding-left:10px;}
-.nav_right li a:link,.nav_right li a:visited{ padding-right:10px; color:#F6E5B7; text-decoration:none}
-.nav_right li a:hover{ color:#fff; text-decoration:none}
-.nav_right li span{ float:right; color:#ff6666;}
+
+.nav{
+  width:100%; 
+  border:1px 
+  solid #D32A2F; 
+  border-left:0;
+  border-right:0;
+  height:32px;
+  line-height:32px;
+  background:#de3237;
+}
+.nav_left{
+  float:left;
+  margin: 0 auto;
+  position: relative;
+  z-index: 111;
+}
+.nav_left li{
+  float:left;
+  margin-right:10px;
+}
+.nav_left li a:link,.nav_left li a:visited{
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  padding:0 50px;
+  line-height:33px;
+  text-decoration:none;
+  display:block;
+}
+.nav_left li a:hover{
+  background:#ba0100;
+}
+
+.nav_left .second_nav{
+  position: relative;
+	list-style: none;
+	opacity: 0;
+}
+
+.nav_left .second_nav li{
+	float: none;
+}
+
+.nav_left .second_nav a{
+	white-space: nowrap;
+}
+
+.nav_left li:hover .second_nav {
+	background: #de3237;
+	opacity: 1;
+}
+
+/* .nav_right{
+  float:right;
+}
+.nav_right li{
+  float:left;
+  padding-left:10px;
+}
+.nav_right li a:link,.nav_right li a:visited{
+  padding-right:10px;
+  color:#F6E5B7;
+  text-decoration:none;
+}
+.nav_right li a:hover{
+  color:#fff;
+  text-decoration:none;
+}
+.nav_right li span{
+  float:right;
+  color:#ff6666;
+} */
