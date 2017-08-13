@@ -58,11 +58,13 @@ a:hover{ color:#de3237; text-decoration:none}
 .nav_left .second_nav{
   position: relative;
 	list-style: none;
-	opacity: 0;
+  display: none;
+  z-index: 9999;
 }
 
 .nav_left .second_nav li{
-	float: none;
+  position: relative;
+  float: none;
 }
 
 .nav_left .second_nav a{
@@ -71,7 +73,8 @@ a:hover{ color:#de3237; text-decoration:none}
 
 .nav_left li:hover .second_nav {
 	background: #de3237;
-	opacity: 1;
+  display: block;
+
 }
 
 /* .nav_right{
