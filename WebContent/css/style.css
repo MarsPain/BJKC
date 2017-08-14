@@ -41,13 +41,13 @@ img{border:none;}
 }
 .nav_left li{
   float:left;
-  margin-right:10px;
+  margin-right:0px;
 }
 .nav_left li a:link,.nav_left li a:visited{
   color:#fff;
   font-size:14px;
   font-weight:bold;
-  padding:0 50px;
+  padding:0 52px;
   line-height:33px;
   text-decoration:none;
   display:block;
@@ -120,27 +120,41 @@ img{border:none;}
  
 /* 用选项卡设置政策发布 */
 #tab{
-  width: 640px;padding: 5px;height: 150px;margin: 0px;
+  width: 640px;padding: 5px;height:275px;margin: 0px;
 }
 #tab ul{
   list-style: none;height: 30px;line-height: 30px;
-  border-bottom: 2px#DC7A7A solid;
+  /* border-bottom: 2px#1F1C1C; */
+  float: left;
 }
 #tab ul li{
-  background: #fff;cursor: pointer;float: left;
-  list-style: none;height: 29px;line-height: 29px;
+  background: #D32A2F;cursor: pointer;float: left;
+  list-style: none;height: 30px;line-height: 30px;
   padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
-  border-bottom: 2px solid #c88;
+  color:#EFEAEA;
+  /* border-bottom: 2px solid #C52E2E; */
 }
-#tab ul li .on{
-  border-top: 2px solid saddlebrown;
-  border-bottom: 2px solid #fff;
+#tab ul li.on{
+  background: #ba0100;
 }
 #tab div{
-  height: 100px;width: 620px;line-height: 24px;
-  border-top: none;padding: 1px;border:1px solid #336699;
+  height: 230px;width: 620px;line-height: 24px;
+  border-top: none;padding: 1px;border:1px solid #dfdfdf;
   padding: 10px;
+  float: left;
 }
+#tab div li{
+  width:620px;float:left;margin-top:0px;
+}
+#tab div li img{
+  display:block;float:left;margin-left:10px;
+  margin-top:10px;margin-left:5px;
+}
+#tab div li a{
+  display:block;float:left;margin-left:5px;color:#282626;
+  font-size: 14px;
+}
+
 .hide{
   display: none;
 }
