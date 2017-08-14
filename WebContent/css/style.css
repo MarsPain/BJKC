@@ -91,15 +91,15 @@ img{border:none;}
 .entry .industry{width:160px;height:62px;float:left;margin-left:70px;_margin-left:70px;}
 
 
-.content_left{position: absolute;width:754px;margin-top:10px;height:1800px;}
+.content_left{position: absolute;width:640px;margin-top:10px;height:1800px;}
 /* .content_right{position: absolute;width:250px;float:right;margin-top:10px;height:1800px;} */
 /* .content_right{position: absolute;width:240px;margin-top:10px;height:1800px;}  */
-.content_right{position: absolute;width:240px;left: 754px;}
-.left_top{width:754px;}
-.left_top_zuo{width:372px;float:left;}
+.content_right{position: absolute;width:354px;height:1800px;left: 650px;}
+.left_top{width:640px;}
+.left_top_zuo{width:640px;float:left;}
 
 /*fader就是banner*/
-#fader{position:relative;overflow:hidden;height:242px;width:372px;text-align:center;font-weight:bold;color:#fff;z-index: 2;}
+#fader{position:relative;overflow:hidden;height:320px;width:640px;text-align:center;font-weight:bold;color:#fff;z-index: 2;}
 #fader li{position:absolute;left:0;top:0;}
 #fader li img{display:block;}
 .fader-nav{display:inline-block;margin-right:8px;color:#fff;padding:2px 6px;border:1px solid #fff;background:#ababab;font-weight:bold;font-size:12px;cursor:pointer;}
@@ -118,15 +118,44 @@ img{border:none;}
 .left_top_zuo .intro p a{color:#de3237;}
 .left_top_zuo .intro p a:hover{color:#de3237;text-decoration:underline;}
  
+/* 用选项卡设置政策发布 */
+#tab{
+  width: 640px;padding: 5px;height: 150px;margin: 0px;
+}
+#tab ul{
+  list-style: none;height: 30px;line-height: 30px;
+  border-bottom: 2px#DC7A7A solid;
+}
+#tab ul li{
+  background: #fff;cursor: pointer;float: left;
+  list-style: none;height: 29px;line-height: 29px;
+  padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
+  border-bottom: 2px solid #c88;
+}
+#tab ul li .on{
+  border-top: 2px solid saddlebrown;
+  border-bottom: 2px solid #fff;
+}
+#tab div{
+  height: 100px;width: 620px;line-height: 24px;
+  border-top: none;padding: 1px;border:1px solid #336699;
+  padding: 10px;
+}
+.hide{
+  display: none;
+}
+
+
+
 /*国家政策*/
-.gjzc{width:372px;margin-top:10px;}
+.gjzc{width:640px;margin-top:10px;}
 .gjzc h1 span{display:blick;height:33px;line-height:34px;margin-left:30px;float:left;}
 .gjzc h1 a{display:block;float:right;margin-right:10px;color:#de3437;margin-top:2px;}
 .gjzc h1 a:hover{text-decoration:underline;}
 
-.gjzc .list{border:1px solid #dfdfdf;border-top:none;width:370px;height:243px;}
+.gjzc .list{border:1px solid #dfdfdf;border-top:none;width:640px;height:243px;}
 .gjzc .list ul{}
-.gjzc .list ul li{width:370px;float:left;margin-top:10px;}
+.gjzc .list ul li{width:640px;float:left;margin-top:10px;}
 .gjzc .list ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
 .gjzc .list ul li a{display:block;float:left;margin-left:5px;color:#696969;}
 .gjzc .list ul li a:hover{color:#de3237;text-decoration:underline;}
@@ -258,9 +287,9 @@ img{border:none;}
 
 
 /*热点视频*/
-.rdsp{width:240px;height:320px;margin-top:10px;}
-.rdsp h1{width:210px;height:33px;line-height:34px;background:url(../images/title2.png);font-size:14px;color:#de3237;padding-left:30px;}
-.rdsp ul{width:238px;height:280px;border:1px solid #dfdfdf;border-top:none;}
+.rdsp{width:354px;height:320px;margin-top:0px;}
+.rdsp h1{width:320px;height:33px;line-height:34px;background:url(../images/title2.png);font-size:14px;color:#de3237;padding-left:30px;}
+.rdsp ul{width:354px;height:280px;border:1px solid #dfdfdf;border-top:none;}
 .rdsp ul li{width:108px;height:130px;float:left;margin-left:7px;margin-top:8px;_margin-left:4px;_margin-right:2px;}
 .rdsp ul li a{display:block;color:#696969;}
 .rdsp ul li a:hover{color:#de3437;text-decoration:underline;}
