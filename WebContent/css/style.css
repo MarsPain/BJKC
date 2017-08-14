@@ -79,7 +79,7 @@ img{border:none;}
 }
 
 /*********************************************************************资讯中间***********************************************/
-.content{width:1004px;margin:0 auto;}
+.content{position: relative;width:1004px;margin:0 auto;}
 .entry{width:1004px;height:62px;background:url(../images/entry.png);}
 .entry ul{*clear:both;}
 .entry ul li{float:left;margin-top:10px;color:#4f4f4f;}
@@ -91,9 +91,10 @@ img{border:none;}
 .entry .industry{width:160px;height:62px;float:left;margin-left:70px;_margin-left:70px;}
 
 
-.content_left{position: absolute;width:754px;float:left;margin-top:10px;height:1800px;}
+.content_left{position: absolute;width:754px;margin-top:10px;height:1800px;}
 /* .content_right{position: absolute;width:250px;float:right;margin-top:10px;height:1800px;} */
-.content_right{width:240px;float:right;} 
+/* .content_right{position: absolute;width:240px;margin-top:10px;height:1800px;}  */
+.content_right{position: absolute;width:240px;left: 754px;}
 .left_top{width:754px;}
 .left_top_zuo{width:372px;float:left;}
 
@@ -255,32 +256,6 @@ img{border:none;}
 .left_under{width:754px;}
 .left_under_zuo{width:372px;float:left;}
 
-/*蜜饯果脯 炒货干果 糖果巧克力 肉松肉干共用*/
-/* .mjgf{width:372px;margin-top:10px;}
-.mjgf h1{width:342px;height:33px;line-height:34px;background:url(../images/title.png);font-size:14px;color:#de3237;padding-left:30px;}
-.mjgf .intro{width:370px;height:113px;padding-top:10px;border:1px solid #dfdfdf;border-top:none;border-bottom:none;}
-.mjgf .intro img{display:block;float:left;margin-left:10px;_margin-left:5px;}
-.mjgf .intro h2{width:212px;float:right;font-size:12px;}
-.mjgf .intro h2 a{color:#4d4d4d;}
-.mjgf .intro h2 a:hover{color:#de3437;text-decoration:underline;}
-.mjgf .intro p{width:202px;padding-right:10px;text-align:justify;text-justify:inter-ideograph;float:right;text-indent:2em;margin-top:10px;line-height:18px;color:#696969;}
-.mjgf .intro p a{color:#de3237;}
-.mjgf .intro p a:hover{color:#de3237;text-decoration:underline;}
-
-.mjgf .list{border:1px solid #dfdfdf;border-top:none;width:370px;height:155px;}
-.mjgf .list ul{}
-.mjgf .list ul li{width:370px;float:left;margin-top:10px;}
-.mjgf .list ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
-.mjgf .list ul li a{display:block;float:left;margin-left:5px;color:#696969;}
-.mjgf .list ul li a:hover{color:#de3237;text-decoration:underline;}
-
-
-.left_under_you{width:372px;float:right;}*/
-
-
-
-
-.content_right{width:240px;float:right;} 
 
 /*热点视频*/
 .rdsp{width:240px;height:320px;margin-top:10px;}
