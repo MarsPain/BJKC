@@ -188,7 +188,7 @@ img{border:none;}
   width:620px;float:left;margin-top:0px;
 }
 #tab2 div li img{
-  display:block;float:left;margin-left:10px;
+  display:block;float:left;
   margin-top:10px;margin-left:5px;
 }
 #tab2 div li a{
@@ -343,13 +343,33 @@ img{border:none;}
 
 /*热点视频*/
 .rdsp{width:354px;height:320px;margin-top:0px;}
-.rdsp h1{width:320px;height:33px;line-height:34px;background:url(../images/title2.png);font-size:14px;color:#de3237;padding-left:30px;}
-.rdsp ul{width:354px;height:280px;border:1px solid #dfdfdf;border-top:none;}
-.rdsp ul li{width:108px;height:130px;float:left;margin-left:7px;margin-top:8px;_margin-left:4px;_margin-right:2px;}
-.rdsp ul li a{display:block;color:#696969;}
-.rdsp ul li a:hover{color:#de3437;text-decoration:underline;}
-.rdsp ul li a img{display:block;}
-.rdsp ul li a span{display:block;margin-top:5px;} 
+.rdsp h1{
+  width:354px;height:30px;line-height:30px;
+  font-size:16px;color:#de3237;
+}
+.rdsp ul{
+  width:354px;height:290px;border:1px 
+  solid #dfdfdf;}
+.rdsp ul li{
+  width:354px;height:20px;float:left;
+  margin-left:7px;margin-top:5px;
+}
+.rdsp ul li a{ 
+  display:block;float:left;
+  margin-left:5px;color:#282626;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.rdsp ul li a:hover{
+  color:#de3437;text-decoration:underline;
+}
+.rdsp ul li img{
+  display:block;float:left;
+  margin-top:10px;margin-left:5px;
+}
+.rdsp ul li a span{
+  display:block;margin-top:5px;
+} 
 
 /*企业风采*/
 .qyfc{width:240px;margin-top:5px;}
