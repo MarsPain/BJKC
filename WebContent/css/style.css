@@ -41,13 +41,12 @@ img{border:none;}
 }
 .nav_left li{
   float:left;
-  margin-right:0px;
 }
 .nav_left li a:link,.nav_left li a:visited{
   color:#fff;
   font-size:14px;
   font-weight:bold;
-  padding:0 52px;
+  padding:0 53px;
   line-height:33px;
   text-decoration:none;
   display:block;
@@ -155,7 +154,6 @@ img{border:none;}
   display:block;float:left;margin-left:5px;color:#282626;
   font-size: 14px;
 }
-
 .hide{
   display: none;
 }

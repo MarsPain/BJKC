@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>新政策网首页</title>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/banner1.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </head>
@@ -427,13 +428,82 @@
 		<div class="content_right">
 			<div class="rdsp">
 				<h1>热点视频</h1>
-        <ul>
-        	<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-        	<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-        	<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-          <li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-        </ul>
+				<ul>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<li>国务院通过...</li>
+					<!-- <li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li> -->
+				</ul>
 			</div>
+			
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript"> 
+				(function (win){ 
+					var callboarTimer; 
+					var callboard = $(".rdsp"); 
+					var callboardUl = callboard.find('ul'); 
+					var callboardLi = callboard.find('li'); 
+					var liLen = callboard.find('li').length; 
+					var initHeight = callboardLi.first().outerHeight(true); 
+				
+					win.autoAnimation = function (){ 
+						if (liLen <= 1) return; 
+						var self = arguments.callee; 
+						var callboardLiFirst = callboard.find('li').first(); 
+						callboardLiFirst.animate({ 
+							marginTop:-initHeight 
+						}, 500, function (){ 
+							clearTimeout(callboarTimer); 
+							callboardLiFirst.appendTo(callboardUl).css({marginTop:0}); 
+							callboarTimer = setTimeout(self, 500); 
+						}); 
+					} 
+				
+					callboard.mouseenter( 
+						function (){ 
+							clearTimeout(callboarTimer); 
+						}).mouseleave(function (){ 
+							callboarTimer = setTimeout(win.autoAnimation, 500); 
+						}); 
+				}(window));
+			setTimeout(window.autoAnimation, 500); 
+			</script>
 			
 			
 			<div class="qyfc">
