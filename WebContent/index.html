@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>新政策网首页</title>
-<link href="css/style.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="js/jquery.min.js"></script> 
+<link href="css/style.css" type="text/css" rel="stylesheet" /> 
 <script type="text/javascript" src="js/banner1.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 </head>
 
 <body>
@@ -426,24 +426,12 @@
    	</div> -->
 		<!-- </div> -->
 		<div class="content_right">
-			<div class="rdsp">
-				<h1>热点视频</h1>
+
+
+			<div class="rdgz">
+				<h1>热点关注</h1>
 				<ul>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<li>国务院通过...</li>
-					<!-- <li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
@@ -457,35 +445,22 @@
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li> -->
 				</ul>
 			</div>
 			
-			<script type="text/javascript" src="js/jquery.min.js"></script>
 			<script type="text/javascript"> 
 				(function (win){ 
 					var callboarTimer; 
-					var callboard = $(".rdsp"); 
+					var callboard = $(".rdgz"); 
 					var callboardUl = callboard.find('ul'); 
-					var callboardLi = callboard.find('li'); 
-					var liLen = callboard.find('li').length; 
+					var callboardLi = callboardUl.find('li'); 
+					var liLen = callboardUl.find('li').length; 
 					var initHeight = callboardLi.first().outerHeight(true); 
 				
 					win.autoAnimation = function (){ 
 						if (liLen <= 1) return; 
 						var self = arguments.callee; 
-						var callboardLiFirst = callboard.find('li').first(); 
+						var callboardLiFirst = callboardUl.find('li').first(); 
 						callboardLiFirst.animate({ 
 							marginTop:-initHeight 
 						}, 500, function (){ 

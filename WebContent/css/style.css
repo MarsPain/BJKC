@@ -340,32 +340,36 @@ img{border:none;}
 
 
 /*热点视频*/
-.rdsp{width:354px;height:320px;margin-top:0px;}
-.rdsp h1{
+.rdgz{
+  width:354px;height:320px;margin-top:0px;
+
+}
+.rdgz h1{
   width:354px;height:30px;line-height:30px;
   font-size:16px;color:#de3237;
 }
-.rdsp ul{
-  width:354px;height:290px;border:1px 
-  solid #dfdfdf;}
-.rdsp ul li{
+.rdgz ul{
+  width:354px;height:290px;
+  border:1px solid #dfdfdf;
+}
+.rdgz ul li{
   width:354px;height:20px;float:left;
   margin-left:7px;margin-top:5px;
 }
-.rdsp ul li a{ 
+.rdgz ul li a{ 
   display:block;float:left;
   margin-left:5px;color:#282626;
   font-size: 14px;
   margin-top: 5px;
 }
-.rdsp ul li a:hover{
+.rdgz ul li a:hover{
   color:#de3437;text-decoration:underline;
 }
-.rdsp ul li img{
+.rdgz ul li img{
   display:block;float:left;
   margin-top:10px;margin-left:5px;
 }
-.rdsp ul li a span{
+.rdgz ul li a span{
   display:block;margin-top:5px;
 } 
 
