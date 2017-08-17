@@ -426,32 +426,31 @@
    	</div> -->
 		<!-- </div> -->
 		<div class="content_right">
-
-
 			<div class="rdgz">
 				<h1>热点关注</h1>
-				<ul>
-
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
-				</ul>
+				<div class="scroll">
+					<ul>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+						<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">国务院通过...</a></li>
+					</ul>
+				</div>
 			</div>
 			
 			<script type="text/javascript"> 
 				(function (win){ 
 					var callboarTimer; 
-					var callboard = $(".rdgz"); 
+					var callboard = $(".scroll"); 
 					var callboardUl = callboard.find('ul'); 
 					var callboardLi = callboardUl.find('li'); 
 					var liLen = callboardUl.find('li').length; 
@@ -465,7 +464,7 @@
 							marginTop:-initHeight 
 						}, 500, function (){ 
 							clearTimeout(callboarTimer); 
-							callboardLiFirst.appendTo(callboardUl).css({marginTop:0}); 
+							callboardLiFirst.appendTo(callboardUl).css({marginTop:5}); 
 							callboarTimer = setTimeout(self, 500); 
 						}); 
 					} 
