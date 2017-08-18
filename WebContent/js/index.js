@@ -32,6 +32,66 @@ window.onload = function(){
       myDiv2[this.index].className = "show"
     }
   }
+
+  (function (win){ 
+    var callboarTimer; 
+    var callboard = $(".scroll1"); 
+    var callboardUl = callboard.find('ul'); 
+    var callboardLi = callboardUl.find('li'); 
+    var liLen = callboardUl.find('li').length; 
+    var initHeight = callboardLi.first().outerHeight(true); 
+  
+    win.autoAnimation = function (){ 
+      if (liLen <= 1) return; 
+      var self = arguments.callee; 
+      var callboardLiFirst = callboardUl.find('li').first(); 
+      callboardLiFirst.animate({ 
+        marginTop:-initHeight 
+      }, 500, function (){ 
+        clearTimeout(callboarTimer); 
+        callboardLiFirst.appendTo(callboardUl).css({marginTop:5}); 
+        callboarTimer = setTimeout(self, 500); 
+      }); 
+    } 
+  
+    callboard.mouseenter( 
+      function (){ 
+        clearTimeout(callboarTimer); 
+      }).mouseleave(function (){ 
+        callboarTimer = setTimeout(win.autoAnimation, 500); 
+      }); 
+  }(window));
+  setTimeout(window.autoAnimation, 500);
+
+  (function (win){ 
+    var callboarTimer; 
+    var callboard = $(".scroll2"); 
+    var callboardUl = callboard.find('ul'); 
+    var callboardLi = callboardUl.find('li'); 
+    var liLen = callboardUl.find('li').length; 
+    var initHeight = callboardLi.first().outerHeight(true); 
+  
+    win.autoAnimation = function (){ 
+      if (liLen <= 1) return; 
+      var self = arguments.callee; 
+      var callboardLiFirst = callboardUl.find('li').first(); 
+      callboardLiFirst.animate({ 
+        marginTop:-initHeight 
+      }, 500, function (){ 
+        clearTimeout(callboarTimer); 
+        callboardLiFirst.appendTo(callboardUl).css({marginTop:5}); 
+        callboarTimer = setTimeout(self, 500); 
+      }); 
+    } 
+  
+    callboard.mouseenter( 
+      function (){ 
+        clearTimeout(callboarTimer); 
+      }).mouseleave(function (){ 
+        callboarTimer = setTimeout(win.autoAnimation, 500); 
+      }); 
+  }(window));
+  setTimeout(window.autoAnimation, 500);
 }
 
 
