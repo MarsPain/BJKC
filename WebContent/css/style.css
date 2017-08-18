@@ -100,8 +100,8 @@ img{border:none;}
 
 /*fader就是banner*/
 #fader{position:relative;overflow:hidden;height:320px;width:640px;text-align:center;font-weight:bold;color:#fff;z-index: 2;}
-#fader li{position:absolute;left:0;top:0;}
-#fader li img{display:block;}
+#fader li{position:relative;left: 0px;top:0;}
+#fader li img{display:block;left: 0px;top:0;}
 .fader-nav{display:inline-block;margin-right:8px;color:#fff;padding:2px 6px;border:1px solid #fff;background:#ababab;font-weight:bold;font-size:12px;cursor:pointer;}
 .fader-cur-nav{display:inline-block;margin-right:8px;color:#fff;padding:2px 6px;background:#de3437;border:1px solid #fff;font-weight:bold;font-size:12px;cursor:pointer;}
 
@@ -120,7 +120,7 @@ img{border:none;}
  
 /* 用选项卡设置政策发布 */
 #tab{
-  width: 640px;padding: 5px;height:275px;margin: 0px;
+  width: 640px;height:320px;margin-top: 5px;
 }
 #tab ul{
   list-style: none;height: 30px;line-height: 30px;
@@ -138,7 +138,7 @@ img{border:none;}
   background: #ba0100;
 }
 #tab div{
-  height: 230px;width: 620px;line-height: 24px;
+  height: 270px;width: 620px;line-height: 24px;
   border-top: none;padding: 1px;border:1px solid #dfdfdf;
   padding: 10px;
   float: left;
@@ -161,7 +161,7 @@ img{border:none;}
 
 /* 用带选项卡的窗口显示媒体聚焦、政策解读、文件发布 */
 #tab2{
-  width: 640px;padding: 5px;height:275px;margin: 0px;
+  width: 640px;;height:320px;margin-top: 5px;
 }
 #tab2 ul{
   list-style: none;height: 30px;line-height: 30px;
@@ -177,7 +177,7 @@ img{border:none;}
   background: #ba0100;
 }
 #tab2 div{
-  height: 230px;width: 620px;line-height: 24px;
+  height: 270px;width: 620px;line-height: 24px;
   border-top: none;padding: 1px;border:1px solid #dfdfdf;
   padding: 10px;
   float: left;
