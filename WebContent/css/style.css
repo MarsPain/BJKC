@@ -10,7 +10,12 @@ img{border:none;}
 /*********************************************************************网页头部***********************************************/
 
 .wrap{width:1004px; margin:0 auto;}
-.top{ width:100%; background:#f7f7f7; border-bottom:1px solid #dad9d7; height:28px; line-height:28px;}
+.wrap a{outline: none; /* for Forefox */ } 
+.wrap a{star:expression(this.onFocus=this.blur()); /* for Ie*/ } 
+.wrap a:link,a:visited{ color:#333; text-decoration:none; font-size:12px;}
+.wrap a:hover{ color:#de3237; text-decoration:none}
+.wrap .fr{float: right;}
+.top{width:100%; background:#f7f7f7; border-bottom:1px solid #dad9d7; height:28px; line-height:28px;}
 .header{ width:100%; padding:10px 0;}
 .search_box{ padding:30px 0 15px;}
 .search{ width:520px; height:68px;float:right;}
@@ -32,6 +37,7 @@ img{border:none;}
   height:32px;
   line-height:32px;
   background:#de3237;
+  margin-top: 15px;
 }
 .nav_left{
   float:left;
