@@ -12,8 +12,8 @@ img{border:none;}
 .wrap{width:1004px; margin:0 auto;}
 .wrap a{outline: none; /* for Forefox */ } 
 .wrap a{star:expression(this.onFocus=this.blur()); /* for Ie*/ } 
-.wrap a:link,a:visited{ color:#333; text-decoration:none; font-size:12px;}
-.wrap a:hover{ color:#de3237; text-decoration:none}
+.wrap a:link,a:visited{ color:#de3237; text-decoration:none; font-size:12px;}
+.wrap a:hover{ color:#de3237; text-decoration:underline}
 .wrap .fr{float: right;}
 .top{width:100%; background:#f7f7f7; border-bottom:1px solid #dad9d7; height:28px; line-height:28px;}
 .header{ width:100%; padding:10px 0;}
