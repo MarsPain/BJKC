@@ -106,7 +106,7 @@ img{border:none;}
 
 /*fader就是banner*/
 #fader{position:relative;overflow:hidden;height:320px;width:640px;text-align:center;font-weight:bold;color:#fff;z-index: 2;}
-#fader li{position:relative;left: 0px;top:0;}
+#fader li{position: absolute;left: 0px;top:0;}
 #fader li img{display:block;left: 0px;top:0;}
 .fader-nav{display:inline-block;margin-right:8px;color:#fff;padding:2px 6px;border:1px solid #fff;background:#ababab;font-weight:bold;font-size:12px;cursor:pointer;}
 .fader-cur-nav{display:inline-block;margin-right:8px;color:#fff;padding:2px 6px;background:#de3437;border:1px solid #fff;font-weight:bold;font-size:12px;cursor:pointer;}
