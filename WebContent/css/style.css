@@ -345,7 +345,7 @@ img{border:none;}
 .left_under_zuo{width:372px;float:left;}
 
 
-/*热点视频*/
+/*热点关注*/
 .rdgz{
   width:354px;height:320px;margin-top:0px;
 
@@ -385,7 +385,7 @@ img{border:none;}
   display:block;margin-top:5px;
 } 
 
-/*企业风采*/
+/*政策检索*/
 .qyfc{
   width:354px;height:320px;margin-top:0px;
 
@@ -395,38 +395,37 @@ img{border:none;}
   font-size:16px;color:#de3237;
   margin-top:5px;
 }
-.qyfc .scroll2 {
+.qyfc ul{
   width:354px;height:290px;
   line-height:24px; overflow:hidden; 
   font-size:12px; 
   border:1px solid #dfdfdf;
-}
-.qyfc .scroll2 ul{
   padding:0;
 }
-.qyfc .scroll2 ul li{
+
+.qyfc ul li{
   width:354px;height:20px;float:left;
   margin-left:7px;margin-top:5px;
   padding:0;
 }
-.qyfc .scroll2 ul li a{ 
+.qyfc ul li a{ 
   display:block;float:left;
   margin-left:5px;color:#282626;
   font-size: 14px;
   margin-top: 5px;
 }
-.qyfc .scroll2 ul li a:hover{
+.qyfc ul li a:hover{
   color:#de3437;text-decoration:underline;
 }
-.qyfc .scroll2 ul li img{
+.qyfc ul li img{
   display:block;float:left;
   margin-top:15px;margin-left:5px;
 }
-.qyfc .scroll2 ul li a span{
+.qyfc ul li a span{
   display:block;margin-top:5px;
 }
 
-/*产品推广*/
+/*政策讨论*/
 .cptg{
   width:354px;height:320px;margin-top:0px;
 }
@@ -435,7 +434,47 @@ img{border:none;}
   font-size:16px;color:#de3237;
   margin-top:5px;
 }
-/* .cptg h1 span{
+.cptg ul{
+  width:354px;height:290px;
+  line-height:24px; overflow:hidden; 
+  font-size:12px; 
+  border:1px solid #dfdfdf;
+  padding:0;
+}
+
+.cptg ul li{
+  width:354px;height:20px;float:left;
+  margin-left:7px;margin-top:5px;
+  padding:0;
+}
+.cptg ul li a{ 
+  display:block;float:left;
+  margin-left:5px;color:#282626;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.cptg ul li a:hover{
+  color:#de3437;text-decoration:underline;
+}
+.cptg ul li img{
+  display:block;float:left;
+  margin-top:15px;margin-left:5px;
+}
+.cptg ul li a span{
+  display:block;margin-top:5px;
+}
+
+
+
+/* .cptg{
+  width:354px;height:320px;margin-top:0px;
+}
+.cptg h1{
+  width:354px;height:30px;line-height:30px;
+  font-size:16px;color:#de3237;
+  margin-top:5px;
+}
+.cptg h1 span{
   display:blick;height:33px;line-height:34px;
   margin-left:30px;float:left;
 }
@@ -446,7 +485,7 @@ img{border:none;}
 }
 .cptg h1 a:hover{
   text-decoration:underline;
-} */
+}
 .cptg ul{
   width:354px;height:290px;
   border:1px solid #dfdfdf;
@@ -466,7 +505,7 @@ img{border:none;}
 }
 .cptg ul li a span{
   display:block;margin-top:5px;
-} 
+}  */
 
 /*人物专访*/
 
