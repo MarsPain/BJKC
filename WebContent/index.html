@@ -7,6 +7,7 @@
 <script type="text/javascript" src="js/banner1.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.cityselect.js"></script>
 </head>
 
 <body>
@@ -452,8 +453,23 @@
 			
 			<div class="qyfc">
 				<h1>政策检索</h1>
+
 				<div id="city">
+					<select class="prov"></select>   
+					<select class="city" disabled="disabled"></select>  
+					<select class="dist" disabled="disabled"></select>  
 				</div>
+
+				<script type="text/javascript">
+					$("#city").citySelect({   
+						url:"city.min.js",   
+						prov:"北京市", //省份  
+						city:"朝阳区", //城市  
+						dist:"", //区县  
+						nodata:"none" //当子集无数据时，隐藏select  
+					});
+				</script>
+
 				<ul>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="content-qy.html" title="">北焦科创孵化器</a></li>
 					<li><img src="images/dian.png" width="5px" height="5px" alt="" /><a href="" title="">不一样的梦想孵化器</a></li>
