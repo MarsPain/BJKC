@@ -47,7 +47,7 @@ body{
 }
 .login-head {
 	padding: 2em 0;
-	background: #0099FF;
+	background: #de3237;
 	position:relative;
 }
 .login-head h1 {
@@ -99,7 +99,7 @@ input[type="text"], input[type="password"] {
 	border:none;
 }
 input[type="text"]:hover, input[type="password"]:hover{
-	color:#0099FF;
+	color:#de3237;
 	
 }
 .submit h4 a{
@@ -112,7 +112,7 @@ input[type="text"]:hover, input[type="password"]:hover{
 	margin-left: 21px;
 }
 .submit h4 a:hover{
-	color:#0099FF;
+	color:#de3237;
 }
 /*************************/
 .submit{
@@ -128,8 +128,8 @@ input[type="submit"] {
 	padding: 12px 0px;
 	width: 35%;
 	font-size: 18px;
-	background:#0099FF;
-	border:2px solid #0099FF;
+	background:#de3237;
+	border:2px solid #de3237;
 	border-radius: 0.5em;
 	-webkit-border-radius:0.5em;
 	-moz-border-radius:0.5em;
@@ -137,8 +137,8 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
 	background: #fff;
-	color:#0099FF;
-	border:2px solid #0099FF;
+	color:#de3237;
+	border:2px solid #de3237;
 }
 /*----*/
 /* footer */
