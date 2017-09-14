@@ -82,9 +82,11 @@ img{border:none;}
 }
 
 .content{width:1004px;margin:0 auto;} 
-.list{position: absolute; border:1px solid #dfdfdf;border-top:none;width:1004px;height:700px;}
-.list ul{font-size:15px;}
-.list ul li{width:1004px;float:left;margin-top:10px;}
-.list ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
-.list ul li a{display:block;float:left;margin-left:5px;color:#696969;}
-.list ul li a:hover{color:#de3237;text-decoration:underline;}  
+.list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:700px;}
+.location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
+.location li{padding: 5px 10px;}
+.file{position: absolute; font-size:15px; margin-top: 40px;}
+.file li{width:1004px;float:left;margin-top:10px;}
+.file li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
+.file li a{display:block;float:left;margin-left:5px;color:#696969;}
+.file li a:hover{color:#de3237;text-decoration:underline;}  
