@@ -95,10 +95,10 @@ img{border:none;}
 .entry .industry{width:160px;height:62px;float:left;margin-left:70px;_margin-left:70px;}
 
 
-.content_left{position: absolute;width:640px;margin-top:10px;height:1800px;}
+.content_left{position: absolute;width:640px;margin-top:10px;height:1100px;}
 /* .content_right{position: absolute;width:250px;float:right;margin-top:10px;height:1800px;} */
 /* .content_right{position: absolute;width:240px;margin-top:10px;height:1800px;}  */
-.content_right{position: absolute;width:354px;height:1800px;left: 650px;}
+.content_right{position: absolute;width:354px;height:1100px;left: 650px;}
 .left_top{width:640px;}
 .left_top_zuo{width:640px;float:left;}
 .left_top_you{width:354px;float:right;}
