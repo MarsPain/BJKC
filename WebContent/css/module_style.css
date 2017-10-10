@@ -27,6 +27,10 @@ img{border:none;}
 #lain1 ul{display:none;text-align:left;}
 #lain1 ul.block{display: block;}
 
+#time{
+  float: right;
+  margin-right: 5px;
+}
 .nav{
   width:100%; 
   border:1px 
