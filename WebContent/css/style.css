@@ -151,6 +151,9 @@ img{border:none;}
 #tab div li{
   width:620px;float:left;margin-top:0px;
 }
+#tab div li a:hover{
+  color:#de3437;text-decoration:underline;
+}
 #tab div li img{
   display:block;float:left;margin-left:10px;
   margin-top:10px;margin-left:5px;
@@ -158,6 +161,10 @@ img{border:none;}
 #tab div li a{
   display:block;float:left;margin-left:5px;color:#282626;
   font-size: 14px;
+}
+.more {
+  display:block;float:right;margin-right:0px;
+  color:#de3437;margin-top:8px;
 }
 .hide{
   display: none;
