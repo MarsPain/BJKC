@@ -131,19 +131,19 @@ img{border:none;}
 #tab{
   width: 640px;height:320px;margin-top: 5px;
 }
-#tab ul{
+#tab #options{
   list-style: none;height: 30px;line-height: 30px;
   /* border-bottom: 2px#1F1C1C; */
   float: left;
 }
-#tab ul li{
+#tab #options li{
   background: #D32A2F;cursor: pointer;float: left;
   list-style: none;height: 30px;line-height: 30px;
   padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
   color:#EFEAEA;
   /* border-bottom: 2px solid #C52E2E; */
 }
-#tab ul li.on{
+#tab #options li.on{
   background: #ba0100;
 }
 #tab div{

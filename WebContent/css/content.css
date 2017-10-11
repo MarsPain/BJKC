@@ -27,6 +27,9 @@ img{border:none;}
 #lain1 ul{display:none;text-align:left;}
 #lain1 ul.block{display: block;}
 
+#source{
+  font-size:12px;
+}
 .nav{
   width:100%; 
   border:1px 
