@@ -177,19 +177,21 @@ img{border:none;}
 
 /* 用带选项卡的窗口显示媒体聚焦、政策解读、文件发布 */
 #tab2{
-  width: 640px;;height:320px;margin-top: 5px;
+  width: 640px;height:320px;margin-top: 5px;
 }
-#tab2 ul{
+#tab2 #options{
   list-style: none;height: 30px;line-height: 30px;
+  /* border-bottom: 2px#1F1C1C; */
   float: left;
 }
-#tab2 ul li{
+#tab2 #options li{
   background: #D32A2F;cursor: pointer;float: left;
   list-style: none;height: 30px;line-height: 30px;
   padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
   color:#EFEAEA;
+  /* border-bottom: 2px solid #C52E2E; */
 }
-#tab2 ul li.on{
+#tab2 #options li.on{
   background: #ba0100;
 }
 #tab2 div{
@@ -201,15 +203,21 @@ img{border:none;}
 #tab2 div li{
   width:620px;float:left;margin-top:0px;
 }
+#tab2 div li a:hover{
+  color:#de3437;text-decoration:underline;
+}
 #tab2 div li img{
-  display:block;float:left;
+  display:block;float:left;margin-left:10px;
   margin-top:10px;margin-left:5px;
 }
 #tab2 div li a{
   display:block;float:left;margin-left:5px;color:#282626;
   font-size: 14px;
 }
-
+.more {
+  display:block;float:right;margin-right:0px;
+  color:#de3437;margin-top:8px;
+}
 .hide{
   display: none;
 }
