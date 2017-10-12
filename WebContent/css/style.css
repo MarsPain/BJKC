@@ -28,9 +28,10 @@ img{border:none;}
 #lain1 ul{display:none;text-align:left;}
 #lain1 ul.block{display: block;}
 
-#time{
+.time{
   float: right;
 }
+
 
 .nav{
   width:100%; 
@@ -310,9 +311,10 @@ img{border:none;}
 .qyfc ul li a span{
   display:block;margin-top:5px;
 }
-.qyfc #time{
+.qyfc .time{
   float: right;
   margin-right:10px;
+  padding-top: 5px;
 }
 
 /*政策讨论*/
@@ -353,9 +355,10 @@ img{border:none;}
 .cptg ul li a span{
   display:block;margin-top:5px;
 }
-.cptg #time{
+.cptg .time{
   float: right;
   margin-right:10px;
+  padding-top: 5px;
 }
 
 
