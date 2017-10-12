@@ -99,9 +99,9 @@ img{border:none;}
 #subnav{
   position: absolute;
   width: 170px;
-  margin: 0 auto;
+  margin-top: 100px;
   float: left;
-  line-height:33px;
+  line-height:40px;
   /* background:#de3237; */
 }
 #subnav #title{
@@ -114,14 +114,15 @@ img{border:none;}
 #subnav_tag li a{
   /* color:#fff; */
   font-size:14px;
-  font-weight:bold;
+  /* font-weight:bold; */
   text-align: center;  
   /* padding:0 53px; */
-  line-height:33px;
+  line-height:40px;
   display:block;
+  background: #BDBABA;
 }
 #subnav_tag li a:hover{
-  background:#de3237;
+  background:#7A7979;
 }
 #second_tag{
   display: none;
@@ -130,13 +131,15 @@ img{border:none;}
   position: relative;
   font-size: 12px;
   text-align: right;
+  
 }
 #second_tag li a{
   font-size: 12px;
+  background: #CECBCB;
   /* float: right; */
 }
 #second_tag li a:hover{
-  background:#de3237;
+  background:#7A7979;
 }
 #subnav_tag li:hover #second_tag {
   display: block;
