@@ -90,10 +90,10 @@ img{border:none;}
 .location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
 .location li{padding: 5px 10px;}
 .file{position: absolute; font-size:15px; margin-top: 40px;}
-.file li{width:1004px;float:left;margin-top:10px;}
-.file li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
-.file li a{display:block;float:left;margin-left:5px;color:#696969;}
-.file li a:hover{color:#de3237;text-decoration:underline;}  
+.file ul li{width:1004px;float:left;margin-top:10px;}
+.file ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
+.file ul li a{display:block;float:left;margin-left:5px;color:#696969;}
+.file ul li a:hover{color:#de3237;text-decoration:underline;}  
 
 
 /*********************************************************************资讯脚部***********************************************/
