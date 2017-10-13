@@ -92,7 +92,7 @@ img{border:none;}
 .file{position: absolute; font-size:15px; margin-top: 40px;}
 .file ul li{width:1004px;float:left;margin-top:10px;}
 .file ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
-.file ul li a{display:block;float:left;margin-left:5px;color:#696969;}
+.file ul li a{display:block;float:left;margin-left:5px;color:#0F0E0E;}
 .file ul li a:hover{color:#de3237;text-decoration:underline;}  
 
 
