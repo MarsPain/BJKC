@@ -86,7 +86,7 @@ img{border:none;}
 }
 
 .content{width:1004px;margin:0 auto;} 
-.list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:700px;}
+.list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:900px;}
 .location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
 .location li{padding: 5px 10px;}
 .file{position: absolute; font-size:15px; margin-top: 40px;}
