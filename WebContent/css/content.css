@@ -81,13 +81,13 @@ img{border:none;}
 }
 
 .content{
-  position: relative; width:1004px;margin:0 auto;
+  position: relative; width:994px;margin:0 auto;
   border:1px solid #dfdfdf;
   /* height:700px; */
   float: center;
 }
 .detail{
-  position: absolute;width:994px;margin:0 auto;
+  position: absolute;width:1004px;margin:0 auto;
   font-size:15px;line-height:200%;text-indent:2em;
   margin:0px 0px 0px 10px;
 }
@@ -146,3 +146,18 @@ img{border:none;}
   display: block;
 }
 
+/*********************************************************************资讯脚部***********************************************/
+
+.footer{
+  width:1004px;height:100px;border-top:1px solid #dfdfdf;
+  font-family:Arial;font-size: 12px;
+  line-height:100%;
+}
+.footer ul{padding-top:5px;color:#696969;}
+.footer ul .li_left{text-align:left;}
+.footer ul .li_right{text-align:right;}
+.footer ul li{width:502px;float:left;margin-top:10px;}
+.footer ul li a{color:#696969;}
+.footer ul li a:hover{text-decoration:underline;}
+.footer ul li span a{color:#414141;font-weight:bold;}
+.footer ul li span a:hover{text-decoration:underline;}
