@@ -139,6 +139,7 @@ img{border:none;}
 }
 #tab #options li{
   background: #D32A2F;cursor: pointer;float: left;
+  font-size: 15px;
   list-style: none;height: 30px;line-height: 30px;
   padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
   color:#EFEAEA;
@@ -146,6 +147,7 @@ img{border:none;}
 }
 #tab #options li.on{
   background: #ba0100;
+  font-weight:bold;
 }
 #tab div{
   height: 270px;width: 620px;line-height: 25px;
@@ -187,6 +189,7 @@ img{border:none;}
 }
 #tab2 #options li{
   background: #D32A2F;cursor: pointer;float: left;
+  font-size: 15px;
   list-style: none;height: 30px;line-height: 30px;
   padding: 0px 10px;margin: 0px 10px;border: 1px solid #BBB;
   color:#EFEAEA;
@@ -194,6 +197,7 @@ img{border:none;}
 }
 #tab2 #options li.on{
   background: #ba0100;
+  font-weight:bold;
 }
 #tab2 div{
   height: 270px;width: 620px;line-height: 25px;
@@ -366,7 +370,7 @@ img{border:none;}
 }
 .cptg .more {
   display:block;float:right;margin-right:0px;
-  color:#de3437;margin-top:13px;
+  color:#de3437;margin-top:18px;
 }
 
 
