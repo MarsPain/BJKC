@@ -103,24 +103,20 @@ img{border:none;}
   margin:0 auto;
   float: left;
   line-height:40px;
-  /* background:#de3237; */
 }
 #subnav #title{
   background: #de3237;
   font-size: 19px;
   font-weight:bold;
   text-align: center;
-  /* padding:0 53px; */
 }
 #subnav_tag li a{
-  /* color:#fff; */
   font-size:14px;
-  /* font-weight:bold; */
   text-align: center;  
-  /* padding:0 53px; */
   line-height:40px;
   display:block;
   background: #BDBABA;
+  color: #333;
 }
 #subnav_tag li a:hover{
   background:#7A7979;
@@ -137,7 +133,6 @@ img{border:none;}
 #second_tag li a{
   font-size: 12px;
   background: #CECBCB;
-  /* float: right; */
 }
 #second_tag li a:hover{
   background:#7A7979;
