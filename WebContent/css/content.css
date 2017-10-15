@@ -115,11 +115,11 @@ img{border:none;}
   text-align: center;  
   line-height:40px;
   display:block;
-  background: #BDBABA;
+  background: rgb(207, 204, 204);
   color: #333;
 }
 #subnav_tag li a:hover{
-  background:#7A7979;
+  background:rgb(133, 131, 131);
 }
 #second_tag{
   display: none;
@@ -132,7 +132,7 @@ img{border:none;}
 }
 #second_tag li a{
   font-size: 12px;
-  background: #CECBCB;
+  background: rgb(233, 229, 229);
 }
 #second_tag li a:hover{
   background:#7A7979;
