@@ -88,14 +88,38 @@ img{border:none;}
 
 /* *******************主要内容*************************** */
 .content{width:1004px;margin:0 auto;} 
-.list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:920px;}
+.list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:1100px;}
 .location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
 .location li{padding: 5px 10px;}
-.file{position: absolute; font-size:15px; margin-top: 40px;}
+.file{position: absolute; font-size:15px; margin-top: 210px;}
 .file ul li{width:1004px;float:left;margin-top:10px;}
 .file ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
 .file ul li a{display:block;float:left;margin-left:5px;color:#0F0E0E;}
 .file ul li a:hover{color:#de3237;text-decoration:underline;}  
+
+/* *********************************导航栏******************************** */
+#subnav{
+  position: absolute;
+  width: 1004px;
+  height: 150px;
+  padding-top: 50px;
+  
+}
+#subnav .subnav_group{
+  height: 50px;
+}
+#subnav .subnav_group .subnav_title{
+  float: left;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height:50px;
+}
+#subnav .subnav_group .subnav_item{
+  float: left;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height:50px;
+}
 
 /* *******************************翻页框****************************** */
 
@@ -106,7 +130,7 @@ img{border:none;}
   float: center;
   /* transform: translate(-50%, -50%); */
   text-align: center;
-  margin-top: 870px;
+  margin-top: 1040px;
   margin-left: 85px;
   padding: 0;
   list-style: none;
