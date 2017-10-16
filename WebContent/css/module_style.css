@@ -122,9 +122,9 @@ img{border:none;}
 #subnav .subnav_group .subnav_item:hover{
   color:#de3237;text-decoration:underline;
 }
-/* #subnav .subnav_group .subnav_item:focus{
+#subnav .subnav_group .subnav_item:focus{
   color:#de3237;
-} */
+}
 
 /* *******************************翻页框****************************** */
 
