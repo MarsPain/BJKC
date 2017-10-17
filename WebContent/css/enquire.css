@@ -100,13 +100,28 @@ img{border:none;}
   padding: 5px 10px;
 }
 #remind{
-  position: relative; width: 1004px; height: 80px; 
+  position: absolute; width: 1004px; height: 80px; 
   line-height: 30px; font-size: 15px;
   padding-top: 40px;
 }
 #remind li{
   text-align: center;
   color: #de3237;
+}
+#enquire{
+  position: relative; width: 1004px; height: 950px;
+  padding-top: 120px;
+}
+#enquire #enquire_information{
+  height: 800px;
+}
+#enquire #enquire_information li{
+  border: 1px solid #dfdfdf;
+  height: 50px; margin: 15px 15px;
+  /* background: #c0c0c0; */
+}
+#enquire #enquire_information li p{
+  font-size: 20px; margin: 15px 15px;
 }
 
 
