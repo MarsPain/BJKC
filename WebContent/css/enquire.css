@@ -117,6 +117,7 @@ img{border:none;}
 }
 #enquire #enquire_information .enquire_information_1{
   border: 1px solid #dfdfdf;
+  box-shadow: 2px 2px 2px rgb(104, 102, 102);
   height: 50px; margin: 15px 15px;
 }
 #enquire #enquire_information .enquire_information_1 p{
@@ -124,6 +125,7 @@ img{border:none;}
 }
 #enquire #enquire_information #enquire_information_2{
   border: 1px solid #dfdfdf;
+  box-shadow: 2px 2px 2px rgb(104, 102, 102);
   height: 300px; margin: 15px 15px;
 }
 #enquire #enquire_information #enquire_information_2 p{
