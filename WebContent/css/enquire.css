@@ -113,15 +113,27 @@ img{border:none;}
   padding-top: 120px;
 }
 #enquire #enquire_information{
-  height: 800px;
+  height: 650px;
 }
-#enquire #enquire_information li{
+#enquire #enquire_information .enquire_information_1{
   border: 1px solid #dfdfdf;
   height: 50px; margin: 15px 15px;
-  /* background: #c0c0c0; */
 }
-#enquire #enquire_information li p{
+#enquire #enquire_information .enquire_information_1 p{
   font-size: 20px; margin: 15px 15px;
+}
+#enquire #enquire_information #enquire_information_2{
+  border: 1px solid #dfdfdf;
+  height: 300px; margin: 15px 15px;
+}
+#enquire #enquire_information #enquire_information_2 p{
+  font-size: 20px;margin-left: 15px; 
+}
+#enquire #submit{
+  float: right;
+  margin-right: 15px;
+  font-size: 25px;
+  background:  #b6b1b2;
 }
 
 

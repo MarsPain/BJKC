@@ -77,7 +77,7 @@
       
       <div id="enquire">
         <ul id="enquire_information">
-          <li>
+          <li class="enquire_information_1">
            <p><!-- span标签不是块级元素，无法设置margin-top或者padding-top等，所以包裹在p标签中 -->
               <span>咨询标题</span>
               <input type="text" size="50px" style="height:20px" 
@@ -85,7 +85,7 @@
                 onBlur="if(this.value==''){this.value='请输入政策名称';}">
             </p>
           </li>
-          <li>
+          <li class="enquire_information_1">
             <p><!-- span标签不是块级元素，无法设置margin-top或者padding-top等，所以包裹在p标签中 -->
               <span>您的姓名</span>
               <input type="text" size="50px" style="height:20px" 
@@ -93,7 +93,7 @@
                 onBlur="if(this.value==''){this.value='请输入政策名称';}">
             </p>
           </li>
-          <li>
+          <li class="enquire_information_1">
             <p><!-- span标签不是块级元素，无法设置margin-top或者padding-top等，所以包裹在p标签中 -->
               <span>手机号码</span>
               <input type="text" size="50px" style="height:20px" 
@@ -101,7 +101,7 @@
                 onBlur="if(this.value==''){this.value='请输入政策名称';}">
             </p>
           </li>
-          <li>
+          <li class="enquire_information_1">
             <p><!-- span标签不是块级元素，无法设置margin-top或者padding-top等，所以包裹在p标签中 -->
               <span>电子邮箱</span>
               <input type="text" size="50px" style="height:20px" 
@@ -109,7 +109,7 @@
                 onBlur="if(this.value==''){this.value='请输入政策名称';}">
             </p>
           </li>
-          <li>
+          <li class="enquire_information_1">
             <p><!-- span标签不是块级元素，无法设置margin-top或者padding-top等，所以包裹在p标签中 -->
               <span>联系地址</span>
               <input type="text" size="50px" style="height:20px" 
@@ -117,7 +117,15 @@
                 onBlur="if(this.value==''){this.value='请输入政策名称';}">
             </p>
           </li>
+          <li id="enquire_information_2">
+            <p>
+              <span>请输入您的详细咨询内容</span>
+              <br/>
+              <textarea rows="17" cols="131" resize: none;></textarea>
+            </p>
+          </li>
         </ul>
+        <input id="submit" type="button" value="提交问题">
       </div>
 
     </div>
