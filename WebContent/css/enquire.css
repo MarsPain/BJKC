@@ -90,7 +90,7 @@ img{border:none;}
 .content{width:1004px;margin:0 auto;} 
 .list{
   position: relative; border:1px solid #dfdfdf;border-top:none;
-  width:1004px;height:1100px;
+  width:1004px;height:860px;
 }
 .location{
   position: absolute; width: 1004px;height: 40px;background: #de3237;
@@ -116,16 +116,12 @@ img{border:none;}
   height: 650px;
 }
 #enquire #enquire_information .enquire_information_1{
-  border: 1px solid #dfdfdf;
-  box-shadow: 2px 2px 2px rgb(104, 102, 102);
   height: 50px; margin: 15px 15px;
 }
 #enquire #enquire_information .enquire_information_1 p{
   font-size: 20px; margin: 15px 15px;
 }
 #enquire #enquire_information #enquire_information_2{
-  border: 1px solid #dfdfdf;
-  box-shadow: 2px 2px 2px rgb(104, 102, 102);
   height: 300px; margin: 15px 15px;
 }
 #enquire #enquire_information #enquire_information_2 p{
@@ -133,7 +129,7 @@ img{border:none;}
 }
 #enquire #submit{
   float: right;
-  margin-right: 15px;
+  margin-right: 30px;
   font-size: 25px;
   background:  #b6b1b2;
 }
