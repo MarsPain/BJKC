@@ -106,6 +106,8 @@ img{border:none;}
 }
 #subnav .subnav_group{
   height: 50px;
+  border: 1px solid #ebebeb;
+  border-style:dotted;
 }
 #subnav .subnav_group .subnav_title{
   float: left;
