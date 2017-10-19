@@ -45,7 +45,7 @@ img{border:none;}
 .nav_left{
   float:left;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 111;
 }
 .nav_left li{
@@ -89,41 +89,55 @@ img{border:none;}
 /* *******************主要内容*************************** */
 .content{width:1004px;margin:0 auto;} 
 .list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:1100px;}
-.location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
+.location{position: relative; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
 .location li{padding: 5px 10px;}
-.file{position: absolute; font-size:15px; margin-top: 210px;}
-.file ul li{width:1004px;float:left;margin-top:10px;}
-.file ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
-.file ul li a{display:block;float:left;margin-left:5px;color:#0F0E0E;}
-.file ul li a:hover{color:#de3237;text-decoration:underline;}  
 
-/* *********************************导航栏******************************** */
-#subnav{
-  position: absolute;
-  width: 1004px;
-  height: 150px;
-  padding-top: 50px;
+
+/* *********************************选项卡格式的主要内容******************************** */
+#tab3{
+  position: relative;
+  width: 640px;height:320px;margin-top: 15px;
 }
-#subnav .subnav_group{
-  height: 50px;
+#tab3 #options{
+  list-style: none;height: 30px;line-height: 30px;
+  /* border-bottom: 2px#1F1C1C; */
+  float: center;
 }
-#subnav .subnav_group .subnav_title{
+#tab3 #options li{
+  background: #D32A2F;cursor: pointer;float: left;
+  font-size: 15px;
+  list-style: none;height: 30px;line-height: 30px;
+  padding: 0px 10px;margin: 0px 10px;
+  border: 1px solid #BBB;
+  color:#EFEAEA;
+}
+#tab3 #options li.on{
+  background: #ba0100;
+  font-weight:bold;
+}
+#tab3 div{
+  height: 270px;width: 620px;line-height: 25px;
+  border-top: none;padding: 1px;
+  /* border:1px solid #dfdfdf; */
+  padding: 10px;
   float: left;
-  padding:0px 10px;
+}
+#tab3 div li{
+  width:620px;float:left;margin-top:0px;
+}
+#tab3 div li a:hover{
+  color:#de3437;text-decoration:underline;
+}
+#tab3 div li img{
+  display:block;float:left;margin-left:10px;
+  margin-top:10px;margin-left:5px;
+}
+#tab3 div li a{
+  display:block;float:left;margin-left:5px;color:#282626;
   font-size: 14px;
-  line-height:50px;
 }
-#subnav .subnav_group .subnav_item{
-  float: left;
-  padding:0px 10px;
-  font-size: 14px;
-  line-height:50px;
-}
-#subnav .subnav_group .subnav_item:hover{
-  color:#de3237;text-decoration:underline;
-}
-#subnav .subnav_group .subnav_item:focus{
-  color:#de3237;
+.hide{
+  display: none;
 }
 
 /* *******************************翻页框****************************** */
@@ -146,7 +160,7 @@ img{border:none;}
   margin: 0 10px;
   height: 40px;
   float: left;
-  cursor: pointer;
+  cursorrgb(253, 163, 166)er;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
 }
