@@ -95,19 +95,18 @@ img{border:none;}
 
 /* *********************************选项卡格式的主要内容******************************** */
 #tab3{
-  position: relative;
-  width: 640px;height:320px;margin-top: 15px;
+  position: relative; margin-top: 15px;
+  width: 1004px;height:320px;
 }
 #tab3 #options{
-  list-style: none;height: 30px;line-height: 30px;
-  /* border-bottom: 2px#1F1C1C; */
-  float: center;
+  list-style: none;height: 40px;line-height: 30px;
 }
 #tab3 #options li{
   background: #D32A2F;cursor: pointer;float: left;
-  font-size: 15px;
-  list-style: none;height: 30px;line-height: 30px;
-  padding: 0px 10px;margin: 0px 10px;
+  font-size: 20px;
+  height: 30px;line-height: 30px;
+  padding: 0px 10px;
+  margin: 0px 70px;
   border: 1px solid #BBB;
   color:#EFEAEA;
 }
@@ -116,14 +115,13 @@ img{border:none;}
   font-weight:bold;
 }
 #tab3 div{
-  height: 270px;width: 620px;line-height: 25px;
+  height: 270px;width: 620px;line-height: 35px;
   border-top: none;padding: 1px;
-  /* border:1px solid #dfdfdf; */
   padding: 10px;
   float: left;
 }
 #tab3 div li{
-  width:620px;float:left;margin-top:0px;
+  width:620px;float:left;
 }
 #tab3 div li a:hover{
   color:#de3437;text-decoration:underline;
