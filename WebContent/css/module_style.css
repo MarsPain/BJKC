@@ -112,13 +112,13 @@ img{border:none;}
 #subnav .subnav_group .subnav_title{
   float: left;
   padding:0px 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height:50px;
 }
 #subnav .subnav_group .subnav_item{
   float: left;
   padding:0px 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height:50px;
 }
 #subnav .subnav_group .subnav_item:hover{
