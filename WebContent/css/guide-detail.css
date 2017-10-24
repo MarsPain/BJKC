@@ -100,7 +100,7 @@ img{border:none;}
 #title table{
   display:block;
   font-size: 16px;
-  background: #f0ecec;
+  background: #dfdfdf;
   float: center;
 }
 #title table th{
@@ -116,7 +116,7 @@ img{border:none;}
 
 #introduce{
   width: 1004;
-  height: 500px;
+  height: 800px;
   border: 1px solid #dfdfdf;
 }
 #introduce span{
@@ -128,17 +128,18 @@ img{border:none;}
   background: #df3237;
 }
 #introduce ul{
-  width: 984px;
-  height: 400px;
+  width: 974px;
+  height: 650px;
   margin: 0 auto;
-  background: #f0ecec;
+  border: 5px solid #dfdfdf;
 }
 #introduce ul li{
   width: 964px;
   height: 40px;
   margin: 0 auto;
-  /* background: #ffffff; */
+  background: #ffffff; 
   line-height: 40px;
+  border: 5px solid #dfdfdf;
 }
 #introduce ul li .title{
   font-size: 16px;
@@ -149,6 +150,7 @@ img{border:none;}
   font-size: 16px;
   background: none;
   display: inline;
+  color: #3882c4;
 }
 
 
