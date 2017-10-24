@@ -44,7 +44,7 @@ img{border:none;}
 .nav_left{
   float:left;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 111;
 }
 .nav_left li{
@@ -82,14 +82,76 @@ img{border:none;}
 
 
 /* ************************主要内容************************* */
-.content{
-  width:1004px;margin:0 auto;
+#content{
+  position: relative;
+  width: 1004px;
+  margin: 0 auto;
+}
+#title{
+  float: center;
+  height: 150px;
+}
+#title span{
+  display:block;
+  text-align: center;
+  font-size: 25px;
+  height: 40px;
+}
+#title table{
+  display:block;
+  font-size: 16px;
+  background: #f0ecec;
+  float: center;
+}
+#title table th{
+  text-align: center;
+  width: 100px;
+  height: 40px;
+}
+#title table td{
+  text-align: center;
+  width: 400px;
+  height: 40px;
+}
+
+#introduce{
+  width: 1004;
+  height: 500px;
+  border: 1px solid #dfdfdf;
+}
+#introduce span{
+  text-align: center;
+  display:block;
+  width: 120px;
+  font-size: 23px;
+  margin: 10px 0px 0px 10px;
+  background: #df3237;
+}
+#introduce ul{
+  width: 984px;
+  height: 400px;
+  margin: 0 auto;
+  background: #f0ecec;
+}
+#introduce ul li{
+  width: 964px;
+  height: 30px;
+  background: #ffffff;
+}
+#introduce ul li .title{
+  font-size: 15px;
+  background: none;
+  display: inline;
+}
+#introduce ul li .content{
+  font-size: 15px;
+  background: none;
+  display: inline;
 }
 
 
-
 /* ************************左侧导航栏**************************** */
-#subnav{
+/* #subnav{
   position: fixed;
   width: 170px;
   margin:0 auto;
@@ -131,7 +193,7 @@ img{border:none;}
 }
 #subnav_tag li:hover #second_tag {
   display: block;
-}
+} */
 
 /*********************************************************************资讯脚部***********************************************/
 
