@@ -116,7 +116,6 @@ img{border:none;}
 
 #introduce{
   width: 1004;
-  height: 800px;
   border: 1px solid #dfdfdf;
 }
 #introduce span{
@@ -151,6 +150,63 @@ img{border:none;}
   background: none;
   display: inline;
   color: #3882c4;
+  font-weight: bold;
+}
+
+#condition{
+  margin-top: 20px;
+  border: 1px solid #dfdfdf;
+}
+#condition span{
+  text-align: center;
+  display:block;
+  width: 120px;
+  font-size: 23px;
+  margin: 10px 0px 10px 10px;
+  background: #df3237;
+}
+#condition ul{
+  width: 974px;
+  margin: 0 auto;
+  border: 5px solid #dfdfdf;
+}
+#condition ul li{
+  width: 964px;
+  height: 40px;
+  margin: 0 auto;
+  background: #ffffff; 
+  line-height: 40px;
+  border: 5px solid #dfdfdf;
+  font-size: 16px;
+  background: none;
+}
+
+#stuff{
+  margin-top: 20px;
+  border: 1px solid #dfdfdf;
+}
+#stuff span{
+  text-align: center;
+  display:block;
+  width: 120px;
+  font-size: 23px;
+  margin: 10px 0px 10px 10px;
+  background: #df3237;
+}
+#stuff ul{
+  width: 974px;
+  margin: 0 auto;
+  border: 5px solid #dfdfdf;
+}
+#stuff ul li{
+  width: 964px;
+  height: 40px;
+  margin: 0 auto;
+  background: #ffffff; 
+  line-height: 40px;
+  border: 5px solid #dfdfdf;
+  font-size: 16px;
+  background: none;
 }
 
 
