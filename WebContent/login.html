@@ -31,16 +31,19 @@
 			<h1>欢迎来到新政策网</h1>		
 		</div>
 
-		<form>
+		<form id="login">
 			<li>
-				<input type="text" class="text" value="用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '用户名';}"><a href="#" class=" icon user"></a>
+				<input type="text" class="text">
+				<a href="#" class=" icon user"></a>
 			</li>
 			<br/>
 			<br/>
+
 			<li>
-				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '密码';}"> <a href="#" class="icon lock"></a>
+				<input type="password" > 
+				<a href="#" class="icon lock"></a>
 			</li>
-			<div class="clear"> </div>
+			<br/>
 
 			<div class="submit">
 				<input type="submit" onclick="myFunction()" value="登录" >
