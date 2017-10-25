@@ -92,13 +92,13 @@ img{border:none;}
 .location li{padding: 5px 10px;}
 
 
-/* *********************************选项卡格式的主要内容******************************** */
+/* *********************************选项卡框架内的主要内容******************************** */
 #tab{
   position: relative; margin-top: 15px;
-  width: 1004px;height:320px;
+  width: 1004px;
 }
 #tab #options{
-  list-style: none;height: 40px;line-height: 30px;
+  list-style: none;height: 50px;line-height: 50px;
 }
 #tab #options li{
   background: #D32A2F;cursor: pointer;float: left;
@@ -115,24 +115,22 @@ img{border:none;}
   font-weight:bold;
 }
 #tab div{
-  height: 270px;width: 620px;line-height: 35px;
-  border-top: none;padding: 1px;
-  padding: 10px;
-  float: left;
+  font-size: 16px;
+  height: 0px;width: 1004px;line-height: 40px;
 }
 #tab div li{
-  width:620px;float:left;
+  width:1004px;float:left;
+  border: 1px solid #ebebeb;border-style:dotted;
 }
 #tab div li a:hover{
   color:#de3437;text-decoration:underline;
 }
 #tab div li img{
-  display:block;float:left;margin-left:10px;
-  margin-top:10px;margin-left:5px;
+  display:block;float:left;
+  margin-top:15px;margin-left:5px;
 }
 #tab div li a{
   display:block;float:left;margin-left:5px;color:#282626;
-  font-size: 14px;
 }
 .hide{
   display: none;
