@@ -53,9 +53,8 @@ img{border:none;}
 }
 .nav_left li a:link,.nav_left li a:visited{
   color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  padding:0 53px;
+  font-size:18px;
+  padding:0 50px;
   line-height:33px;
   text-decoration:none;
   display:block;

@@ -53,9 +53,8 @@ img{border:none;}
 }
 .nav_left li a:link,.nav_left li a:visited{
   color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  padding:0 53px;
+  font-size:18px;
+  padding:0 50px;
   line-height:33px;
   text-decoration:none;
   display:block;
@@ -65,7 +64,7 @@ img{border:none;}
 }
 
 .nav_left .second_nav{
-  position: relative;
+  position: absolute;
 	list-style: none;
   display: none;
   z-index: 9999;
@@ -89,20 +88,20 @@ img{border:none;}
 /* *******************主要内容*************************** */
 .content{width:1004px;margin:0 auto;} 
 .list{position: relative; border:1px solid #dfdfdf;border-top:none;width:1004px;height:1100px;}
-.location{position: absolute; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
+.location{position: relative; width: 1004px;height: 40px;background: #de3237;line-height:30px;font-size:20px;}
 .location li{padding: 5px 10px;}
-.file{position: absolute; font-size:15px; margin-top: 210px;}
-.file ul li{width:1004px;float:left;margin-top:10px;}
-.file ul li img{display:block;float:left;margin-left:10px;margin-top:3px;_margin-left:5px;}
+.file{position: relative; font-size:16px;margin-top: 15px; line-height: 40px;}
+.file ul{position: relative; }
+.file ul li{width:1004px;float:left; border: 1px solid #ebebeb;border-style:dotted;  }
+.file ul li img{display:block;float:left;margin-left:10px;margin-top:15px;}
 .file ul li a{display:block;float:left;margin-left:5px;color:#0F0E0E;}
 .file ul li a:hover{color:#de3237;text-decoration:underline;}  
 
 /* *********************************导航栏******************************** */
 #subnav{
-  position: absolute;
+  position: relative;
   width: 1004px;
   height: 150px;
-  padding-top: 50px;
 }
 #subnav .subnav_group{
   height: 50px;
@@ -131,13 +130,13 @@ img{border:none;}
 /* *******************************翻页框****************************** */
 
 .box {
+  position: relative;
   height: 40px;
   line-height: 40px;
   position: absolute;
   float: center;
-  /* transform: translate(-50%, -50%); */
   text-align: center;
-  margin-top: 1040px;
+  margin-top: 820px;
   margin-left: 85px;
   padding: 0;
   list-style: none;

@@ -53,9 +53,8 @@ img{border:none;}
 }
 .nav_left li a:link,.nav_left li a:visited{
   color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  padding:0 53px;
+  font-size:18px;
+  padding:0 50px;
   line-height:33px;
   text-decoration:none;
   display:block;
@@ -103,8 +102,9 @@ img{border:none;}
 }
 #tab #options li{
   background: #D32A2F;cursor: pointer;float: left;
+  text-align: center;
   font-size: 20px;
-  height: 30px;line-height: 30px;
+  height: 35px;line-height: 35px;
   padding: 0px 10px;
   margin: 0px 70px;
   border: 1px solid #BBB;
