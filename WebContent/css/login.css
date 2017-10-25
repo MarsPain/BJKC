@@ -144,6 +144,32 @@ input[type="submit"]:hover {
 	border:2px solid #de3237;
 }
 
+#exit {
+	float: right;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 900;
+	outline: none;
+	font-family: 'Raleway', sans-serif;
+	padding: 12px 0px;
+	width: 35%;
+	font-size: 18px;
+	background:#de3237;
+	border:2px solid #de3237;
+	border-radius: 0.5em;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+#exit:hover {
+	background: #fff;
+	color:#de3237;
+	border:2px solid #de3237;
+}
+
 /*************************************************表单部分结束************************************/
 
 
