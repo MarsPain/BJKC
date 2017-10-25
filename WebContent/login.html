@@ -11,15 +11,24 @@
 <script src="js/jquery-validation-1.17.0/lib/jquery.js"></script>
 <script src="js/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
 <script src="js/jquery-validation-1.17.0/dist/localization/messages_zh.js"></script>
-<script type="text/javascript" src="js/login.js"></script>
 <script src="js/jquery-1.7.2.min.js"></script>
-<script>$(document).ready(function(c) {
-	$('.alert-close').on('click', function(c){
-		$('.message').fadeOut('slow', function(c){
-	  		$('.message').remove();
-		});
-	});	  
-});
+<script>
+	$(document).ready(function(c) {
+		$('.alert-close').on('click', function(c){
+			$('.message').fadeOut('slow', function(c){
+					$('.message').remove();
+			});
+		});	  
+	});
+
+	$.validator.setDefaults({
+    submitHandler: function() {
+      alert("提交事件!");
+    }
+	});
+
+	$().ready(function() {
+		$("#login").validate();
 </script>
 </head>
 <body>
@@ -33,14 +42,14 @@
 
 		<form id="login">
 			<li>
-				<input type="text" class="text">
+				<input type="text" minlength="2" maxlength="12" class="text" required>
 				<a href="#" class=" icon user"></a>
 			</li>
 			<br/>
 			<br/>
 
 			<li>
-				<input type="password" > 
+				<input type="password" minlength="6" maxlength="12" required> 
 				<a href="#" class="icon lock"></a>
 			</li>
 			<br/>
