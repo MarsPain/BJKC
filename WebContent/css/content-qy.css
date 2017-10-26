@@ -41,7 +41,7 @@ img{border:none;}
 .nav_left{
   float:left;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 111;
 }
 .nav_left li{
