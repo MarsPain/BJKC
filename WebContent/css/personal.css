@@ -140,19 +140,19 @@ img{border:none;}
 .hide{
   display: none;
 }
-#thirdPage li{
+#firstPage li{
   padding-left: 15px;
   font-size: 20px;
   line-height: 50px;
 }
-#submit {
+#firstPage #submit {
 	float: left;
 	color: #fff;
 	cursor: pointer;
 	font-weight: 500;
 	outline: none;
 	font-family: 'Raleway', sans-serif;
-	padding: 12px 0px;
+	padding: 5px 0px;
 	width: 100px;
 	font-size: 15px;
 	background:#de3237;
@@ -165,10 +165,38 @@ img{border:none;}
 	position: relative;
 	margin: 10px 0px 0px 350px;
 }
-#submit:hover {
+#firstPage #submit:hover {
 	background: #fff;
 	color:#de3237;
 	border:2px solid #de3237;
+}
+#firstPage #changePassword {
+  float: right;
+  margin-top: 10px;
+  margin-right: 700px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 900;
+	outline: none;
+	font-family: 'Raleway', sans-serif;
+	padding: 5px 0px;
+	width: 100px;
+	font-size: 16px;
+	background:#de3237;
+	border:2px solid #de3237;
+	border-radius: 0.5em;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	text-align: center;
+}
+#firstPage #changePassword:hover {
+	background: #fff;
+	color:#de3237;
+	border:2px solid #de3237;
+}
+#firstPage #change{
+  display: none;
 }
 
 /* *******************************翻页框****************************** */

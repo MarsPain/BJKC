@@ -6,6 +6,7 @@
 <link href="css/personal.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/personal.js"></script>
 <script type="text/javascript" src="js/banner1.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 </head>
 
 <body>
@@ -72,12 +73,55 @@
 
       <div id="tab">
         <ul id="options">
-          <li class="on">您的消息</li>
+          <li class="on">个人信息</li>
+          <li class="off">您的消息</li>
           <li class="off">咨询回复</li>
-          <li class="off">密码修改</li>
         </ul>
         <hr>
         <div id="firstPage" class="show">
+            <ul>
+              <li>
+                  <span>用户名：&nbsp;</span><span>用户123</span>
+              </li>
+              <li>
+                  <span>密码：&nbsp;&nbsp;</span><span>******</span>
+                  <input id="changePassword" type="submit" value="修改密码">
+              </li>
+              <li>
+                  <span>关注行业：</span><span>医疗业</span>
+              </li>
+            </ul>
+            <ul id="change">
+              <li>
+                <label>原始密码&nbsp;</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请输入原始密码" onFocus="if(this.value=='请输入原始密码'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请输入原始密码';}">
+              </li>
+              <li>
+                <label>新密码&nbsp;&nbsp;</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请输入新密码" onFocus="if(this.value=='请输入新密码'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请输入新密码';}">
+              </li>
+              <li>
+                <label>确认新密码</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请重新输入新密码" onFocus="if(this.value=='请重新输入新密码'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请重新输入新密码';}">
+              </li>
+              <li>
+                <input id="submit" type="submit" onclick="myFunction()" value="登录" >
+              </li>
+            </ul>
+
+            <script type="text/javascript">
+              $("#changePassword").click(function() {
+                $('#change').show();
+              })
+            </script>
+          </div>
+        <div id="secondPage" class="hide">
           <ul>
           <li>
             <img src="images/dian.png" width="5px" height="5px" alt="" /><a href="guide-detail.html" title="">农民专业合作社分支机构设立登记 </a>
@@ -111,7 +155,7 @@
           </li>
         </ul>
         </div>
-        <div id="secondPage" class="hide">
+        <div id="thirdPage" class="hide">
           <ul>
           <li>
             <img src="images/dian.png" width="5px" height="5px" alt="" /><a href="#" title="">烟花爆竹经营（零售）许可证核发 </a>
@@ -143,31 +187,6 @@
           <li>
             <img src="images/dian.png" width="5px" height="5px" alt="" /><a href="#" title="">宣传、新闻和出版单位发表尚未公布的国民经济和社会发展统计资料核准</a>
           </li>
-          </ul>
-        </div>
-        <div id="thirdPage" class="hide">
-          <ul>
-            <li>
-              <label>原始密码&nbsp;</label>
-              <input type="text" size="50px" style="height:25px" 
-              value="请输入原始密码" onFocus="if(this.value=='请输入原始密码'){this.value='';}"
-              onBlur="if(this.value==''){this.value='请输入原始密码';}">
-            </li>
-            <li>
-              <label>新密码&nbsp;&nbsp;</label>
-              <input type="text" size="50px" style="height:25px" 
-              value="请输入新密码" onFocus="if(this.value=='请输入新密码'){this.value='';}"
-              onBlur="if(this.value==''){this.value='请输入新密码';}">
-            </li>
-            <li>
-              <label>确认新密码</label>
-              <input type="text" size="50px" style="height:25px" 
-              value="请重新输入新密码" onFocus="if(this.value=='请重新输入新密码'){this.value='';}"
-              onBlur="if(this.value==''){this.value='请重新输入新密码';}">
-            </li>
-            <li>
-              <input id="submit" type="submit" onclick="myFunction()" value="登录" >
-            </li>
           </ul>
         </div>
       </div>
