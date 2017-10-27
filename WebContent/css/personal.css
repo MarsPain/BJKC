@@ -99,15 +99,18 @@ img{border:none;}
 }
 #tab #options{
   position: relative;
+  width: 150px;
+  float: left;
   list-style: none;height: 50px;line-height: 50px;
 }
 #tab #options li{
-  background: #D32A2F;cursor: pointer;float: left;
+  background: #D32A2F;cursor: pointer;
+  /* float: left; */
   text-align: center;
-  font-size: 22px;
-  height: 38px;line-height: 38px;
+  font-size: 18px;
+  height: 35px;line-height: 35px;
   padding: 0px 10px;
-  margin-top: 17px;
+  margin-top: 5px;
   border: 1px solid #BBB;
   color:#EFEAEA;
 }
@@ -117,7 +120,8 @@ img{border:none;}
 }
 #tab div{
   font-size: 16px;
-  height: 0px;width: 1004px;line-height: 40px;
+  float: right;
+  height: 0px;width: 854px;line-height: 40px;
 }
 #tab div li{
   width:1004px;float:left;
