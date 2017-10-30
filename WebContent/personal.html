@@ -82,16 +82,42 @@
             <ul>
               <li>
                   <span>用户名：&nbsp;</span><span>用户123</span>
+                  <input id="changeUsername" type="submit" value="修改用户名">
               </li>
+              <script type="text/javascript">
+                $("#changeUsername").click(function() {
+                  $('#passwordChange').hide();
+                  $('#industryChange').hide();
+                  $('#usernameChange').show();
+                })
+              </script>
+
               <li>
                   <span>密码：&nbsp;&nbsp;</span><span>******</span>
                   <input id="changePassword" type="submit" value="修改密码">
+                  <script type="text/javascript">
+                    $("#changePassword").click(function() {
+                      $('#usernameChange').hide();
+                      $('#industryChange').hide();
+                      $('#passwordChange').show();
+                    })
+                  </script>
               </li>
+
               <li>
                   <span>关注行业：</span><span>医疗业</span>
+                  <input id="changeIndustry" type="submit" value="修改行业">
+                  <script type="text/javascript">
+                    $("#changeIndustry").click(function() {
+                      $('#usernameChange').hide();
+                      $('#passwordChange').hide();
+                      $('#industryChange').show();
+                    })
+                  </script>
               </li>
             </ul>
-            <ul id="change">
+
+            <ul id="passwordChange">
               <li>
                 <label>原始密码&nbsp;</label>
                 <input type="text" size="50px" style="height:25px" 
@@ -111,15 +137,57 @@
                 onBlur="if(this.value==''){this.value='请重新输入新密码';}">
               </li>
               <li>
-                <input id="submit" type="submit" onclick="myFunction()" value="登录" >
+                <input class="submit" type="submit" value="登录" >
               </li>
             </ul>
 
-            <script type="text/javascript">
-              $("#changePassword").click(function() {
-                $('#change').show();
-              })
-            </script>
+            <ul id="usernameChange">
+              <li>
+                <label>新用户名&nbsp;</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请输入新用户名" onFocus="if(this.value=='请输入新用户名'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请输入新用户名';}">
+              </li>
+              <li>
+                <label>确认用户名</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请重新输入新用户名" onFocus="if(this.value=='请重新输入新用户名'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请重新输入新用户名';}">
+              </li>
+              <li>
+                <label>密码&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" size="50px" style="height:25px" 
+                value="请输入密码" onFocus="if(this.value=='请输入密码'){this.value='';}"
+                onBlur="if(this.value==''){this.value='请输入密码';}">
+              </li>
+              <li>
+                <input class="submit" type="submit" value="登录" >
+              </li>
+            </ul>
+
+            <form id="industryChange">
+              <ul>
+                <li>
+                  <input type="checkbox" name="industry" value="industry1">农业
+                  <input type="checkbox" name="industry" value="industry2">金融业
+                  <input type="checkbox" name="industry" value="industry2">服务业
+                  <input type="checkbox" name="industry" value="industry2">医疗业业
+                  <input type="checkbox" name="industry" value="industry1">农业
+                  <input type="checkbox" name="industry" value="industry2">金融业
+                  <input type="checkbox" name="industry" value="industry2">服务业
+                  <input type="checkbox" name="industry" value="industry2">医疗业业
+                  <input type="checkbox" name="industry" value="industry1">农业
+                  <input type="checkbox" name="industry" value="industry2">金融业
+                  <input type="checkbox" name="industry" value="industry2">服务业
+                  <input type="checkbox" name="industry" value="industry2">医疗业业
+                </li>
+              </ul>
+                <li>
+                  <input class="submit" type="submit" value="登录" >
+                </li>
+            </form>
+
+
           </div>
         <div id="secondPage" class="hide">
           <ul>
