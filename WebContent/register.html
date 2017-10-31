@@ -42,21 +42,23 @@
 
 		<form id="login">
 			<li>
-				<input type="text" minlength="2" maxlength="12" class="text" required>
+				<input type="text" value="请输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}"
+				minlength="2" maxlength="12" class="text" required>
 				<a href="#" class=" icon user"></a>
 			</li>
 			<br/>
 
 			<li>
-				<input type="password" minlength="6" maxlength="12" required> 
+				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+				minlength="6" maxlength="12" required> 
 				<a href="#" class="icon lock"></a>
 			</li>
 			<br/>
 			<li>
-			    <select class="list_content" minlength="6" maxlength="12" required>
-			    <option value="0">123</option>
-			    <option value="1">455</option>
-			    </select>
+				<select class="list_content" minlength="6" maxlength="12" required>
+				<option value="0">123</option>
+				<option value="1">455</option>
+				</select>
 			</li>
             <br/>
 			<div class="submit">
