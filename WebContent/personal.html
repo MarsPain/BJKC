@@ -7,6 +7,7 @@
 <script type="text/javascript" src="js/personal.js"></script>
 <script type="text/javascript" src="js/banner1.js"></script>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="js/personal.js"></script>
 </head>
 
 <body>
@@ -117,53 +118,65 @@
               </li>
             </ul>
 
-            <ul id="passwordChange">
+            <form id="passwordChange">
               <li>
                 <label>原始密码&nbsp;</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请输入原始密码" onFocus="if(this.value=='请输入原始密码'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请输入原始密码';}">
+                onBlur="if(this.value==''){this.value='请输入原始密码';}"
+                minlength="6" maxlength="12" required>
               </li>
               <li>
                 <label>新密码&nbsp;&nbsp;</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请输入新密码" onFocus="if(this.value=='请输入新密码'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请输入新密码';}">
+                onBlur="if(this.value==''){this.value='请输入新密码';}"
+                minlength="6" maxlength="12" required>
               </li>
               <li>
                 <label>确认新密码</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请重新输入新密码" onFocus="if(this.value=='请重新输入新密码'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请重新输入新密码';}">
+                onBlur="if(this.value==''){this.value='请重新输入新密码';}"
+                minlength="6" maxlength="12" required>
               </li>
               <li>
-                <input class="submit" type="submit" value="登录" >
+                <input class="submit" type="submit" value="确定" >
               </li>
-            </ul>
 
-            <ul id="usernameChange">
+              <script type="text/javascript">
+                $().ready(function() {
+                  $("#passwordChange").validate();
+                });
+              </script>
+            </form>
+
+            <form id="usernameChange">
               <li>
                 <label>新用户名&nbsp;</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请输入新用户名" onFocus="if(this.value=='请输入新用户名'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请输入新用户名';}">
+                onBlur="if(this.value==''){this.value='请输入新用户名';}"
+                minlength="2" maxlength="12" class="text" required>
               </li>
               <li>
                 <label>确认用户名</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请重新输入新用户名" onFocus="if(this.value=='请重新输入新用户名'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请重新输入新用户名';}">
+                onBlur="if(this.value==''){this.value='请重新输入新用户名';}"
+                minlength="2" maxlength="12" class="text" required>
               </li>
               <li>
                 <label>密码&nbsp;&nbsp;&nbsp;</label>
                 <input type="text" size="50px" style="height:25px" 
                 value="请输入密码" onFocus="if(this.value=='请输入密码'){this.value='';}"
-                onBlur="if(this.value==''){this.value='请输入密码';}">
+                onBlur="if(this.value==''){this.value='请输入密码';}"
+                minlength="6" maxlength="12" required>
               </li>
               <li>
-                <input class="submit" type="submit" value="登录" >
+                <input class="submit" type="submit" value="确定" >
               </li>
-            </ul>
+            </form>
 
             <form id="industryChange">
               <ul>
