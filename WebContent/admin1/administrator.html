@@ -4,6 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/administrator.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-validation-1.17.0/lib/jquery.js"></script>
+<script src="js/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+<script src="js/jquery-validation-1.17.0/dist/localization/messages_zh.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script>
+	$(document).ready(function(c) {
+		$('.alert-close').on('click', function(c){
+			$('.message').fadeOut('slow', function(c){
+					$('.message').remove();
+			});
+		});	  
+	});
+
+	$.validator.setDefaults({
+    submitHandler: function() {
+      alert("提交事件!");
+    }
+	});
+
+	$().ready(function() {
+        $("#forminfo").validate();
+    });
+</script>
 </head>
 
 <body>
@@ -20,12 +44,27 @@
     
     <div class="formtitle"><span>基本信息</span></div>
     
-    <ul class="forminfo">
-    <li><label>原始密码</label><input name="" type="text" class="dfinput" /><i>标题不能超过20个字符</i></li>
-    <li><label>新密码</label><input name="" type="text" class="dfinput" /><i>标题不能超过20个字符</i></li>    
-    <li><label>确认新密码</label><input name="" type="text" class="dfinput" /><i>标题不能超过20个字符</i></li>
-    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="提交"/></li>
-    </ul>
+    <form class="forminfo">
+        <li>
+            <label>原始密码</label>
+            <input name="" type="text" class="dfinput" minlength="6" maxlength="12" class="text" required/>
+            <i>标题不能超过20个字符</i>
+        </li>
+        <li>
+            <label>新密码</label>
+            <input name="" type="text" class="dfinput" minlength="6" maxlength="12" class="text" required/>
+            <i>标题不能超过20个字符</i>
+        </li>    
+        <li>
+            <label>确认新密码</label>
+            <input name="" type="text" class="dfinput" minlength="6" maxlength="12" class="text" required/>
+            <i>标题不能超过20个字符</i>
+        </li>
+        <li>
+            <label>&nbsp;</label>
+            <input name="" type="submit" class="btn" value="提交"/>
+        </li>
+    </form>
   
     </div>
 </body>
