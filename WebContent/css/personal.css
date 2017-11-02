@@ -119,14 +119,17 @@ img{border:none;}
   font-weight:bold;
 }
 #tab div{
+  position: relative;
   font-size: 16px;
   float: right;
   height: 0px;width: 854px;line-height: 40px;
 }
-#tab div li{
+#tab div ul {
+  position: relative;
+}
+#tab div ul li{
   width:840px;float:left;
   padding-left: 14px;
-  border: 1px solid #ebebeb;border-style:dotted;
 }
 #tab div li a:hover{
   color:#de3437;text-decoration:underline;
@@ -142,9 +145,11 @@ img{border:none;}
   display: none;
 }
 
+/* *******************************************第一页选项卡里面的内容********************************** */
 #firstPage li{
   font-size: 20px;
   line-height: 50px;
+  border: 1px solid #ebebeb;border-style:dotted;
 }
 #firstPage .submit {
 	float: left;
@@ -259,6 +264,49 @@ img{border:none;}
   display: none;
 }
 
+
+/* *******************************************第二页选项卡里面的内容********************************** */
+#secondPage ul{
+  height: 120px;
+  border: 1px solid #ebebeb;border-style:dotted;
+}
+#secondPage ul li{
+  border: none;
+  border-style: none;
+}
+#secondPage ul li .time{
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+#secondPage ul .message span{
+  height: 70px;
+  display: block;
+}
+#secondPage ul li .more {
+  font-size: 14px;
+  height: 30px;
+  float: right;
+  color:#de3437;
+}
+
+/* *******************************************第三页选项卡里面的内容********************************** */
+#thirdPage ul{
+  /* border: 1px solid #ebebeb;border-style:dotted; */
+}
+#thirdPage ul li{
+  border-style: none;
+}
+#thirdPage ul .answer{
+  color: #3882c4;
+  font-weight: bold;
+}
+#thirdPage ul .answer-detail .time{
+  color: #3882c4;
+  font-weight: bold;
+  float: right;
+}
 
 /* *******************************翻页框****************************** */
 

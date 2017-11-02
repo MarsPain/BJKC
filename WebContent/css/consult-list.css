@@ -94,17 +94,17 @@ img{border:none;}
 
 /* *******************************咨询答疑列表************************************** */
 .file ul{position: relative; border: 1px solid #ebebeb;border-style:dotted; }
-.file ul #consult-title {
+.file ul .consult-title {
   padding-left: 5px;
 }
-.file ul #consult-title span {
+.file ul .consult-title span {
   color: #3882c4;
   font-weight: bold;
 }
-.file ul #consult-detail {
+.file ul .consult-detail {
   padding-left: 2em;
 }
-.file ul #answer span {
+.file ul .answer span {
   color: #3882c4;
   font-weight: bold;
 }
