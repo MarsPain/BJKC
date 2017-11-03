@@ -151,7 +151,7 @@ img{border:none;}
   line-height: 50px;
   border: 1px solid #ebebeb;border-style:dotted;
 }
-#firstPage .submit {
+#firstPage .ensure {
 	float: left;
 	color: #fff;
 	cursor: pointer;
@@ -169,9 +169,9 @@ img{border:none;}
 	-o-border-radius:0.5em;
 	text-align: center;
 	position: relative;
-	margin: 10px 0px 0px 350px;
+	margin: 10px 0px 0px 365px;
 }
-#firstPage #submit:hover {
+#firstPage .ensure:hover {
 	background: #fff;
 	color:#de3237;
 	border:2px solid #de3237;
@@ -328,7 +328,7 @@ img{border:none;}
   margin: 0 10px;
   height: 40px;
   float: left;
-  cursorrgb(253, 163, 166)er;
+  cursor rgb(253, 163, 166)er;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
 }

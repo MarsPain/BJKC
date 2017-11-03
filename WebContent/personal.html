@@ -74,12 +74,12 @@
 
       <div id="tab">
         <ul id="options">
-          <li class="off">个人信息</li>
+          <li class="on">个人信息</li>
           <li class="off">您的消息</li>
-          <li class="on">咨询回复</li>
+          <li class="off">咨询回复</li>
         </ul>
         <hr>
-        <div id="firstPage" class="hide">
+        <div id="firstPage" class="show">
             <ul>
               <li>
                   <span>用户名：&nbsp;</span><span>用户123</span>
@@ -141,7 +141,7 @@
                 minlength="6" maxlength="12" required>
               </li>
               <li>
-                <input class="submit" type="submit" value="确定" >
+                <input class="ensure" type="submit" value="确定" >
               </li>
 
               <script type="text/javascript">
@@ -174,29 +174,25 @@
                 minlength="6" maxlength="12" required>
               </li>
               <li>
-                <input class="submit" type="submit" value="确定" >
+                <input class="ensure" type="submit" value="确定" >
               </li>
             </form>
 
             <form id="industryChange">
               <ul>
                 <li>
-                  <input type="checkbox" name="industry" value="industry1">农业
-                  <input type="checkbox" name="industry" value="industry2">金融业
-                  <input type="checkbox" name="industry" value="industry2">服务业
-                  <input type="checkbox" name="industry" value="industry2">医疗业业
-                  <input type="checkbox" name="industry" value="industry1">农业
-                  <input type="checkbox" name="industry" value="industry2">金融业
-                  <input type="checkbox" name="industry" value="industry2">服务业
-                  <input type="checkbox" name="industry" value="industry2">医疗业业
-                  <input type="checkbox" name="industry" value="industry1">农业
-                  <input type="checkbox" name="industry" value="industry2">金融业
-                  <input type="checkbox" name="industry" value="industry2">服务业
-                  <input type="checkbox" name="industry" value="industry2">医疗业业
+                  <input type="radio" name="industry" value="industry1">农业<br>
+                  <input type="radio" name="industry" value="industry2">金融业<br>
+                  <input type="radio" name="industry" value="industry2">服务业<br>
+                  <input type="radio" name="industry" value="industry2">医疗业业<br>
+                  <input type="radio" name="industry" value="industry1">农业<br>
+                  <input type="radio" name="industry" value="industry2">金融业<br>
+                  <input type="radio" name="industry" value="industry2">服务业<br>
+                  <input type="radio" name="industry" value="industry2">医疗业业
                 </li>
               </ul>
                 <li>
-                  <input class="submit" type="submit" value="登录" >
+                  <input class="ensure" type="submit" value="确定" >
                 </li>
             </form>
 
@@ -215,7 +211,7 @@
         </div>
 
 
-        <div id="thirdPage" class="show">
+        <div id="thirdPage" class="hide">
           <ul>
             <li class="answer">管理员回复了您的留言：</li>
             <li class="answer-detail">您的留言已回复，请登陆查看。<span class="time">[2017-11-02]</span></li>
