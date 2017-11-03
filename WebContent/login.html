@@ -7,31 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <!-- -->
-<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
-<script src="js/jquery-validation-1.17.0/lib/jquery.js"></script>
-<script src="js/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
-<script src="js/jquery-validation-1.17.0/dist/localization/messages_zh.js"></script>
 <script src="js/jquery-1.7.2.min.js"></script>
-<script>
-	$(document).ready(function(c) {
-		$('.alert-close').on('click', function(c){
-			$('.message').fadeOut('slow', function(c){
-					$('.message').remove();
-			});
-		});	  
-	});
-
-	$.validator.setDefaults({
-    submitHandler: function() {
-      alert("提交事件!");
-    }
-	});
-
-	$().ready(function() {
-		$("#login").validate();
-	});
-</script>
 </head>
+
 <body>
 <!-- contact-form -->	
 <div class="message warning">
@@ -43,7 +21,7 @@
 
 		<form id="login">
 			<li>
-				<input type="text" value="请输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}"
+				<input type="text" placeholder="请输入用户名"
 				minlength="2" maxlength="12" class="text" required>
 				<a href="#" class=" icon user"></a>
 			</li>
@@ -51,7 +29,7 @@
 			<br/>
 
 			<li>
-				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+				<input type="password" placeholder="请输入密码"
 				minlength="6" maxlength="12" required> 
 				<a href="#" class="icon lock"></a>
 			</li>
