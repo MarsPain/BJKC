@@ -127,37 +127,39 @@
               </li>
               <li>
                 <label>新密码&nbsp;&nbsp;</label>
-                <input type="text" size="50px" style="height:25px" 
+                <input id="newPassword" type="text" size="50px" style="height:25px" 
                 placeholder="请输入新密码"
                 minlength="6" maxlength="12" required>
               </li>
               <li>
                 <label>确认新密码</label>
-                <input type="text" size="50px" style="height:25px" 
+                <input id="confirm-newPassword" type="text" size="50px" style="height:25px" 
                 placeholder="请重新输入新密码"
                 minlength="6" maxlength="12" required>
               </li>
               <li>
                 <input class="ensure" type="submit" value="确定" >
               </li>
-
-              <script type="text/javascript">
-                $().ready(function() {
-                  $("#passwordChange").validate();
-                });
-              </script>
             </form>
+            <script type="text/javascript">
+              $("#confirm-newPassword").focusout(function(){
+                if($("#confirm-newPassword").val() != $("#newPassword").val()){
+                  alert("两次输入的密码不一致！请重新输入！");
+                  $("#confirm-newPassword").focus();
+                }
+              })
+            </script>
 
             <form id="usernameChange">
               <li>
                 <label>新用户名&nbsp;</label>
-                <input type="text" size="50px" style="height:25px" 
+                <input id="newUsername" type="text" size="50px" style="height:25px" 
                 placeholder="请输入新用户名"
                 minlength="2" maxlength="12" class="text" required>
               </li>
               <li>
                 <label>确认用户名</label>
-                <input type="text" size="50px" style="height:25px" 
+                <input id="confirm-newUsername" type="text" size="50px" style="height:25px" 
                 placeholder="请重新输入新用户名"
                 minlength="2" maxlength="12" class="text"  required>
               </li>
@@ -171,6 +173,14 @@
                 <input class="ensure" type="submit" value="确定" >
               </li>
             </form>
+            <script type="text/javascript">
+              $("#confirm-newUsername").focusout(function(){
+                if($("#confirm-newUsername").val() != $("#newUsername").val()){
+                  alert("两次输入的密码不一致！请重新输入！");
+                  $("#confirm-newUsername").focus();
+                }
+              })
+            </script>
 
             <form id="industryChange">
               <ul>
