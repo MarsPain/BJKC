@@ -127,94 +127,30 @@ img{border:none;}
   color:#de3237;
 }
 
-/* *******************************翻页框****************************** */
+/* ********************************翻页框************************************ */
+.pagin{position:relative;margin-top:10px;padding:0 12px;}
+.pagin .message{position: absolute; height: 28px; width: 350px; margin-top: 825px; margin-left: 100px;}
+.pagin .blue{color:#de3237;font-style:normal;}
+.pagin .paginList{position: relative; right:12px; top:0; margin-right: 100px; float: right; margin-top: 30px;}
+.pagin .paginList .paginItem{position: relative; float: left; width: 40px; }
+.pagin .paginList .paginItem a{float:left;width:31px;height:28px;border:1px solid #DDD; text-align:center;line-height:30px;border-left:none;color: black;}
+.pagin .paginList .paginItem:first-child a{border-left:1px solid #DDD;}
+.pagin .paginList .paginItem:first-child a{border-bottom-left-radius:5px;border-top-left-radius:5px;}
+.pagin .paginList .paginItem:last-child a{border-bottom-right-radius:5px;border-top-right-radius:5px;}
+.pagin .paginList .paginItem.current,.pagin .paginList .paginItem.current a{background:#f5f5f5; cursor:default;color:#ba0100;}
+.pagin .paginList .paginItem:hover{background:#f5f5f5;}
+.pagin .paginList .paginItem.more,.pagin .paginList .paginItem.more a:hover{ cursor:default;}
+.pagin .paginList .paginItem.more:hover{background:#FFF;}
+.pagin .paginList .paginItem.more a{color:#737373;}
+.pagin .paginList #first{width:50px; height:28px;}
+.pagin .paginList #first a{width:50px; height:28px;}
+.pagin .paginList #pre{width:50px; height:28px;}
+.pagin .paginList #pre a{width:50px; height:28px;}
+.pagin .paginList #next{width:50px; height:28px;}
+.pagin .paginList #next a{width:50px; height:28px;}
+.pagin .paginList #end{width:50px; height:28px;}
+.pagin .paginList #end a{width:50px; height:28px;}
 
-.box {
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  position: absolute;
-  float: center;
-  text-align: center;
-  margin-top: 820px;
-  margin-left: 85px;
-  padding: 0;
-  list-style: none;
-  
-}
-.box button {
-  padding: 0 10px;
-  margin: 0 10px;
-  height: 40px;
-  float: left;
-  cursor: pointer;
-  border: 1px solid #ebebeb;
-  background-color: #ffffff;
-}
-.box .first-page,
-.box .last-page {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.box .pageWrap {
-  height: 40px;
-  float: left;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.box .pageWrap ul {
-  width: 1004px;
-  height: 40px;
-  float: left;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.box .pageWrap ul li {
-  width: 60px;
-  height: 40px;
-  border: 1px solid #ebebeb;
-  line-height: 40px;
-  box-sizing: border-box;
-  cursor: pointer;
-  float: left;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.box .pageWrap ul .sel-page {
-  background-color: #de3237;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.box .jump-text {
-  width: 60px;
-  height: 40px;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 5px;
-  float: left;
-  padding: 0;
-  list-style: none;
-}
-.box .jump-button {
-  margin: 0;
-  float: left;
-  padding: 0;
-  list-style: none;
-}
-.box .total-pages,
-.box .total-count {
-  float: left;
-  font-size: 14px;
-  margin: 0 10px;
-  padding: 0;
-  list-style: none;
-}
 
 
 
