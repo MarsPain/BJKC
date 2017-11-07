@@ -205,6 +205,9 @@ img{border:none;}
 #firstPage #passwordChange{
   display: none;
 }
+#firstPage #passwordChange{
+  padding-left: 15px;
+}
 
 #firstPage #changeUsername {
   float: right;
@@ -233,6 +236,9 @@ img{border:none;}
 }
 #firstPage #usernameChange{
   display: none;
+}
+#firstPage #usernameChange li{
+  padding-left: 15px;
 }
 
 #firstPage #changeIndustry {
