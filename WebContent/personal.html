@@ -120,12 +120,6 @@
 
             <form id="passwordChange">
               <li>
-                <label>原始密码&nbsp;&nbsp;</label>
-                <input type="text" size="50px" style="height:25px" 
-                placeholder="请输入原始密码"
-                minlength="6" maxlength="12" required>
-              </li>
-              <li>
                 <label>新密码&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input id="newPassword" type="text" size="50px" style="height:25px" 
                 placeholder="请输入新密码"
@@ -138,14 +132,24 @@
                 minlength="6" maxlength="12" required>
               </li>
               <li>
+                  <label>原始密码&nbsp;&nbsp;</label>
+                  <input type="text" size="50px" style="height:25px" 
+                  placeholder="请输入原始密码"
+                  minlength="6" maxlength="12" required>
+                </li>
+              <li>
                 <input class="ensure" type="submit" value="确定" >
               </li>
             </form>
             <script type="text/javascript">
               $("#confirm-newPassword").focusout(function(){
                 if($("#confirm-newPassword").val() != $("#newPassword").val()){
-                  alert("两次输入的密码不一致！请重新输入！");
+                  $("#confirm-newPassword").val("两次输入的用户名不一致");
+                  $("#confirm-newPassword").css("color", "red");
                   $("#confirm-newPassword").focus();
+                  $("#confirm-newPassword").click(function(){
+                    $("#confirm-newPassword").val("");
+                  })
                 }
               })
             </script>
@@ -176,8 +180,13 @@
             <script type="text/javascript">
               $("#confirm-newUsername").focusout(function(){
                 if($("#confirm-newUsername").val() != $("#newUsername").val()){
-                  alert("两次输入的密码不一致！请重新输入！");
+                  // alert("两次输入的密码不一致！请重新输入！");
+                  $("#confirm-newUsername").val("两次输入的用户名不一致");
+                  $("#confirm-newUsername").css("color", "red");
                   $("#confirm-newUsername").focus();
+                  $("#confirm-newUsername").click(function(){
+                    $("#confirm-newUsername").val("");
+                  })
                 }
               })
             </script>
