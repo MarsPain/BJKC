@@ -93,7 +93,7 @@ img{border:none;}
 .file{position: relative; font-size:16px;margin-top: 15px; line-height: 40px;}
 
 /* *******************************咨询答疑列表************************************** */
-.file ul{position: relative; border: 1px solid #ebebeb;border-style:dotted; }
+.file ul{position: relative; border: 1px solid #7c7979;border-style:dotted; }
 .file ul .consult-title {
   padding-left: 5px;
 }
@@ -107,6 +107,27 @@ img{border:none;}
 .file ul .answer span {
   color: #3882c4;
   font-weight: bold;
+}
+.file ul .answer .time{
+  color: #3882c4;
+  font-weight: bold;
+  float: right;
+}
+.file ul .answer .switch_answer{
+  color: #fff;
+  margin-left: 820px;
+  background:#de3237;
+  border:2px solid #de3237;
+  border-radius: 0.5em;
+  text-align: center;
+}
+.file ul .answer .switch_answer:hover{
+  background: #fff;
+	color:#de3237;
+	border:2px solid #de3237;
+}
+.file ul .answer .answer_detail{
+  display: none;
 }
 
 
