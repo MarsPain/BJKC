@@ -111,11 +111,14 @@ img{border:none;}
 .file ul .answer .time{
   color: #3882c4;
   font-weight: bold;
-  float: right;
+  float: left;
+  margin-left: 820px;
 }
 .file ul .answer .switch_answer{
   color: #fff;
-  margin-left: 820px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
   background:#de3237;
   border:2px solid #de3237;
   border-radius: 0.5em;
