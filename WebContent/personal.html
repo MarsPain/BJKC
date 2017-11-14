@@ -180,7 +180,6 @@
             <script type="text/javascript">
               $("#confirm-newUsername").focusout(function(){
                 if($("#confirm-newUsername").val() != $("#newUsername").val()){
-                  // alert("两次输入的密码不一致！请重新输入！");
                   $("#confirm-newUsername").val("两次输入的用户名不一致");
                   $("#confirm-newUsername").css("color", "red");
                   $("#confirm-newUsername").focus();
@@ -226,13 +225,31 @@
 
         <div id="thirdPage" class="hide">
           <ul>
-            <li class="answer">管理员回复了您的留言：</li>
-            <li class="answer-detail">您的留言已回复，请登陆查看。<span class="time">[2017-11-02]</span></li>
+            <li class="consult-title"><span>用户一：</span>三证合一错误</li>
+            <li class="consult-detail">企业三证合一后营业执照号变更为91130602MA07K4B2X2其中的组织机构代码号错误应变更为911306027698079622如何更正。</li>
+            <li class="answer">
+              <span class="time">[2017-11-1]</span><input class="switch_answer" type="button" value="查看回复">
+              <br>
+              <div style="border:1px dashed #ebebeb; border-style:dotted;"></div>
+              <div class="answer_detail">&nbsp;&nbsp;&nbsp;&nbsp;您好，让您久等了，五证合一在海淀区综合行政服务大厅和北京市海淀区倒座庙9号两个地点均可办理，到海淀区综合行政服务大厅需要在网上预约后，到大厅办理；到海淀区倒座庙9号的大厅办理，无需预约，只需要带上相关证件到大厅即可办理。</div>
+            </li>
           </ul>
-          <ul>
-            <li class="answer"><span>管理员回复了您的留言：</span></li>
-            <li class="answer-detail">您的留言已回复，请登陆查看。<span class="time">[2017-11-02]</span></li>
-          </ul>
+
+          <script type="text/javascript">
+            $(".switch_answer").click(function(){
+              if($(this).val() == "查看回复"){
+                $(this).val("关闭回复");
+                $(this).nextAll().slideDown("fast", function(){
+  
+                });
+              }else{
+                $(this).val("查看回复");
+                $(this).nextAll().slideUp("fast", function(){
+  
+                });
+              }
+            })
+          </script>
         </div>
       </div>
 

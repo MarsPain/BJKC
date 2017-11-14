@@ -122,7 +122,7 @@ img{border:none;}
   position: relative;
   font-size: 16px;
   float: right;
-  height: 0px;width: 854px;line-height: 40px;
+  width: 854px;line-height: 40px;
 }
 #tab div ul {
   position: relative;
@@ -298,20 +298,46 @@ img{border:none;}
 }
 
 /* *******************************************第三页选项卡里面的内容********************************** */
-#thirdPage ul{
-  /* border: 1px solid #ebebeb;border-style:dotted; */
+#thirdPage{position: relative; font-size:16px; margin-top: 15px; line-height: 40px;}
+#thirdPage ul{position: relative;}
+#thirdPage ul .consult-title {
+  padding-left: 5px;
 }
-#thirdPage ul li{
-  border-style: none;
-}
-#thirdPage ul .answer{
+#thirdPage ul .consult-title span {
   color: #3882c4;
   font-weight: bold;
 }
-#thirdPage ul .answer-detail .time{
+#thirdPage ul .consult-detail {
+  padding-left: 2em;
+  /* margin-right: 100px; */
+}
+#thirdPage ul .answer span {
   color: #3882c4;
   font-weight: bold;
+}
+#thirdPage ul .answer .time{
+  color: #3882c4;
+  font-weight: bold;
+  float: left;
+  margin-left: 650px;
+}
+#thirdPage ul .answer .switch_answer{
+  color: #fff;
   float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+  background:#de3237;
+  border:2px solid #de3237;
+  border-radius: 0.5em;
+  text-align: center;
+}
+#thirdPage ul .answer .switch_answer:hover{
+  background: #fff;
+	color:#de3237;
+	border:2px solid #de3237;
+}
+#thirdPage ul .answer .answer_detail{
+  display: none;
 }
 
 /* *******************************翻页框****************************** */
