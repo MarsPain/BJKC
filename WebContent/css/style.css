@@ -71,20 +71,37 @@ img{border:none;}
   display: none;
   z-index: 9999;
 }
-
 .nav_left .second_nav li{
   position: relative;
   float: none;
+  background: #de3237;
 }
-
 .nav_left .second_nav a{
 	white-space: nowrap;
 }
-
 .nav_left li:hover .second_nav {
+  display: block;
+}
+.third_nav {
+  position: absolute;  
+  left: 172px; /* Set 1px less than menu width */  
+  top: 0;  
+  display: none; 
+  background: #de3237;
+}
+.third_nav a{
+  color:#fff;
+  font-size:18px;
+  padding:0 50px;
+  line-height:33px;
+  text-decoration:none;
+  display:block;
+}
+.second_nav li:hover .third_nav {
 	background: #de3237;
   display: block;
 }
+
 
 /*********************************************************************资讯中间***********************************************/
 .content{position: relative;width:1004px;margin:0 auto;}
